@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* navbar */
+#logo_nav {
+    color: blue;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-left: 5%;
+}
+.nav-link {
+    font-weight: bolder;
+}
+/* navbar emd */
+
+/* main :start */
+.webdeveloper_heading {
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    width: 150px;
+    background-image: linear-gradient(to right, blue, purple);
+
+    border-radius: 10px;
+}
+
+.webdeveloper_heading2 {
+    color: gray;
+    font-size: 30px;
+}
+
+.webdeveloper_heading3 {
+    
+    font-weight: bolder;
+    font-size: 50px;
+    background: linear-gradient(blue, purple);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.webdeveloper_heading4 {
+    font-weight: bolder;
+    font-size: 25px;
+    background: linear-gradient(blue, purple);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact_btn a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.contact_btn {
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(to right, blue, purple);
+    border-radius: 10px;
+    border: none;
+}
+
+/* main end */
+/* about section */
+.about_section {
+    text-align: center;
+    
+    height: 300px;
+}
+
+.about_heading {
+    font-size: 40px;
+    font-weight: bolder;
+    background: linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_text1 {
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.about_text2 {
+    color: gray;
+}
+
+.font_link i {
+    font-size: 30px;
+    background: linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-spacing: 50x;
+}
+
+.font_link a {
+    word-spacing: 20px;
+    text-decoration: none;
+}
+
+/* .about_section :end */
+
+/* footer section */
+.footer_link a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.footer_link {
+    word-spacing: 30px;
+}
+
+/* home page end */
+
+/* resume :start */
+.resume_heading {
+    font-size: 40px;
+    font-weight: bolder;
+    background: linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* cv button */
+.cv_btn a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.cv_btn {
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(to right, blue, purple);
+    border-radius: 10px;
+    border: none;
+}
+/* cv button */
+
+/* skill sextion */
+.progress-bar {
+    background-image: linear-gradient(to right, blue, purple);
+
+}
+/* skill sextion */
+
+
+/* project section */
+.project_heading {
+    font-size: 40px;
+    font-weight: bolder;
+    background: linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project1 a {
+    text-decoration: none;
+    color: black;
+}
+
+/* project section */
+
+
+/* contact section */
+.contact_me {
+    font-size: 40px;
+    font-weight: bolder;
+    background: linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn_submit {
+    height: 50px;
+    background-image: linear-gradient(to right, blue, purple);
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.contact_section {
+    height: 700px;
+}
+
+.conatct_icon {
+    background: linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+/* .contact_section */
