@@ -172,7 +172,7 @@ scroll-behavior: smooth;
 .card{
    box-shadow: 5px 5px 15px 15px gainsboro;
 border-radius: 10px;
-    transition: all 0.7s;
+    transition: all 0.2s;
     /* box-shadow: 5px 5px 15px grey ; */
     
 }
