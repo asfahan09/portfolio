@@ -169,6 +169,9 @@
     text-decoration: none;
     color: black;
 }
+.card{
+    box-shadow: 4px 4px 4px 4px gray;
+}
 
 /* project section */
 
