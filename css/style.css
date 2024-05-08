@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
+scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -170,7 +170,18 @@
     color: black;
 }
 .card{
-    box-shadow: 4px 4px 4px 4px gray;
+   box-shadow: 5px 5px 15px 15px gainsboro;
+border-radius: 10px;
+    transition: all 0.7s;
+    /* box-shadow: 5px 5px 15px grey ; */
+    
+}
+.card:hover{
+    transform: scale(1.15);
+   box-shadow: 5px 5px 15px 5px rgb(100, 97, 97);
+   
+
+
 }
 
 /* project section */
