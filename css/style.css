@@ -4,10 +4,13 @@
     box-sizing: border-box;
 scroll-behavior: smooth;
 }
-
+body{
+    background-color:#F8F8FF;
+}
 /* navbar */
 #logo_nav {
-    color: blue;
+    color: orangered;
+
     font-weight: bolder;
     font-size: 30px;
     padding-left: 5%;
@@ -23,7 +26,7 @@ scroll-behavior: smooth;
     text-align: center;
     color: white;
     width: 150px;
-    background-image: linear-gradient(to right, blue, purple);
+    background-image: linear-gradient(to right, orangered, orange);
 
     border-radius: 10px;
 }
@@ -37,7 +40,7 @@ scroll-behavior: smooth;
     
     font-weight: bolder;
     font-size: 50px;
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(orangered, orange);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -47,7 +50,7 @@ scroll-behavior: smooth;
 .webdeveloper_heading4 {
     font-weight: bolder;
     font-size: 25px;
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(orangered, orange);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -62,7 +65,7 @@ scroll-behavior: smooth;
 .contact_btn {
     width: 150px;
     height: 50px;
-    background-image: linear-gradient(to right, blue, purple);
+    background-image: linear-gradient(to right, orangered, orange);
     border-radius: 10px;
     border: none;
 }
@@ -78,7 +81,7 @@ scroll-behavior: smooth;
 .about_heading {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(orangered, orange);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -96,7 +99,7 @@ scroll-behavior: smooth;
 
 .font_link i {
     font-size: 30px;
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(red, orange);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -127,7 +130,7 @@ scroll-behavior: smooth;
 .resume_heading {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(orangered, orange);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -141,7 +144,7 @@ scroll-behavior: smooth;
 .cv_btn {
     width: 150px;
     height: 50px;
-    background-image: linear-gradient(to right, blue, purple);
+    background-image: linear-gradient(to right, orangered, orange);
     border-radius: 10px;
     border: none;
 }
@@ -149,7 +152,7 @@ scroll-behavior: smooth;
 
 /* skill sextion */
 .progress-bar {
-    background-image: linear-gradient(to right, blue, purple);
+    background-image: linear-gradient(to right,orange,orange );
 
 }
 /* skill sextion */
@@ -159,7 +162,7 @@ scroll-behavior: smooth;
 .project_heading {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(orangered, orange);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -191,7 +194,7 @@ border-radius: 10px;
 .contact_me {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(orangered, orange);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -199,7 +202,7 @@ border-radius: 10px;
 
 .btn_submit {
     height: 50px;
-    background-image: linear-gradient(to right, blue, purple);
+    background-image: linear-gradient(to right, orangered, orange);
     border-radius: 10px;
     border: none;
     color: white;
@@ -210,7 +213,7 @@ border-radius: 10px;
 }
 
 .conatct_icon {
-    background: linear-gradient(blue, purple);
+    background: linear-gradient(orangered, orange);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
