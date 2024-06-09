@@ -207,6 +207,10 @@ border-radius: 10px;
     border: none;
     color: white;
 }
+.card-text{
+text-align: justify;
+
+}
 
 .contact_section {
     height: 700px;
