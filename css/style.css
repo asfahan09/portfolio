@@ -5,18 +5,22 @@
 scroll-behavior: smooth;
 }
 body{
-    background-color:#F8F8FF;
+    background-color:#252525;
 }
 /* navbar */
 #logo_nav {
-    color: orangered;
-
+    color:  #39aaaa;
+    text-shadow: 1px 1px 5px  #39aaaa;
     font-weight: bolder;
     font-size: 30px;
-    /* padding-left: 5%; */
+     padding-left: 5%; 
 }
 .nav-link {
     font-weight: bolder;
+    color: #39aaaa;
+}
+.firstimg{
+    box-shadow: 1px 5px 15px 5px cyan;
 }
 /* navbar emd */
 
@@ -26,13 +30,15 @@ body{
     text-align: center;
     color: white;
     width: 150px;
-    background-image: linear-gradient(to right, orangered, orange);
+color: cyan;
+text-shadow: 3px 3px 5px rgb(49, 11, 185);
+
 
     border-radius: 10px;
 }
 
 .webdeveloper_heading2 {
-    color: gray;
+    color: whitesmoke;
     font-size: 30px;
 }
 
@@ -40,7 +46,8 @@ body{
     
     font-weight: bolder;
     font-size: 50px;
-    background: linear-gradient(orangered, orange);
+    background: linear-gradient(cyan, cyan);
+    text-shadow: 1px 1px 5px cyan;
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -50,23 +57,29 @@ body{
 .webdeveloper_heading4 {
     font-weight: bolder;
     font-size: 25px;
-    background: linear-gradient(orangered, orange);
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: cyan;
 }
 
 .contact_btn a {
-    color: aliceblue;
+    color: #252525;
     text-decoration: none;
 }
 
 .contact_btn {
     width: 150px;
     height: 50px;
-    background-image: linear-gradient(to right, orangered, orange);
+    background-color: #39aaaa;
     border-radius: 10px;
+    border: none;
+}
+
+
+.contact_btn:hover {
+    width: 150px;
+    height: 50px;
+    background-color: cyan;
+    border-radius: 10px;
+    box-shadow:  1px 1px 5px cyan ;
     border: none;
 }
 
@@ -75,48 +88,66 @@ body{
 .about_section {
     text-align: center;
     
-    height: 300px;
 }
 
 .about_heading {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(orangered, orange);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:  #39aaaa;
+    text-shadow: 1px 1px 5px  #39aaaa;
 }
-
-.about_text1 {
-    color: gray;
+.about_heading2{
+    font-size: 40px;
+    font-weight: bolder;
+    color:  cyan;
+    text-shadow: 1px 1px 5px  cyan;
+}
+.about_text {
+    color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    text-align: justify;
 }
-
-.about_text2 {
-    color: gray;
-}
-
 .font_link i {
     font-size: 30px;
-    background: linear-gradient(red, orange);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#39aaaa;
     word-spacing: 50x;
+    
+}
+.font_link i:hover{
+    color: cyan;
+    text-shadow: 2px 2px 5px cyan;
+    
 }
 
 .font_link a {
-    word-spacing: 20px;
+    word-spacing: 30px;
     text-decoration: none;
 }
 
+
 /* .about_section :end */
+
+/* services */
+.service_text{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.service_link  {
+    color: cyan;
+    font-size: 50px;
+    
+}
+
+/* services */
 
 /* footer section */
 .footer_link a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 
 }
 
@@ -130,23 +161,43 @@ body{
 .resume_heading {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(orangered, orange);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#39aaaa;
+    text-shadow: 1px 1px 5px #39aaaa;
+ 
+}
+.resume_heading1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color:  cyan;
+    text-shadow: 1px 1px 5px  cyan;
+ 
 }
 /* cv button */
 .cv_btn a {
-    color: aliceblue;
+    color: #252525;
     text-decoration: none;
+    
 }
 
 .cv_btn {
     width: 150px;
     height: 50px;
-    background-image: linear-gradient(to right, orangered, orange);
     border-radius: 10px;
     border: none;
+    background-color: #39aaaa;
+}
+
+.cv_btn:hover {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: cyan;
+    box-shadow: 1px 1px 5px  cyan;
+
+}
+.inner_box{
+    background-color: #39aaaa;
 }
 /* cv button */
 
@@ -155,6 +206,7 @@ body{
     background-image: linear-gradient(to right,orange,orange );
 
 }
+
 /* skill sextion */
 
 
@@ -162,29 +214,36 @@ body{
 .project_heading {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(orangered, orange);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:  #39aaaa;
+    text-shadow: 1px 1px 5px  #39aaaa;
 }
 
 .project1 a {
     text-decoration: none;
     color: black;
 }
-.card{
-   box-shadow: 5px 5px 15px 15px gainsboro;
-border-radius: 10px;
+ .card{
+    box-shadow: 5px 5px 5px 5px #39aaaa;
+    border-radius: 10px;  
     transition: all 0.2s;
-    /* box-shadow: 5px 5px 15px grey ; */
+    
     
 }
 .card:hover{
-    transform: scale(1.15);
-   box-shadow: 5px 5px 15px 5px rgb(100, 97, 97);
+      /* transform: scale(1.15);   */
+   box-shadow: 5px 5px 5px 5px  cyan;
    
 
 
+} 
+.showicon{
+    text-decoration: none ;
+    font-size: 30px;
+    color:#39aaaa;
+}
+.showicon:hover{
+    color: cyan;
+    text-shadow: 2px 2px 5px cyan;
 }
 
 /* project section */
@@ -194,18 +253,25 @@ border-radius: 10px;
 .contact_me {
     font-size: 40px;
     font-weight: bolder;
-    background: linear-gradient(orangered, orange);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#39aaaa;
+    text-shadow: 1px 1px 5px #39aaaa;
 }
 
 .btn_submit {
     height: 50px;
-    background-image: linear-gradient(to right, orangered, orange);
+    background-color: #39aaaa;
     border-radius: 10px;
     border: none;
-    color: white;
+    color: #252525;
+}
+
+.btn_submit:hover {
+    height: 50px;
+    box-shadow: 1px 1px 5px cyan;
+    background-color: cyan;
+    border-radius: 10px;
+    border: none;
+    color: #252525;
 }
 .card-text{
 text-align: justify;
@@ -217,10 +283,7 @@ text-align: justify;
 }
 
 .conatct_icon {
-    background: linear-gradient(orangered, orange);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#39aaaa;
     font-size: 30px;
 }
 
