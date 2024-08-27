@@ -25,17 +25,7 @@ body{
 /* navbar emd */
 
 /* main :start */
-.webdeveloper_heading {
-    font-weight: bolder;
-    text-align: center;
-    color: white;
-    width: 150px;
-color: cyan;
-text-shadow: 3px 3px 5px rgb(49, 11, 185);
 
-
-    border-radius: 10px;
-}
 
 .webdeveloper_heading2 {
     color: whitesmoke;
@@ -165,6 +155,12 @@ text-shadow: 3px 3px 5px rgb(49, 11, 185);
     text-shadow: 1px 1px 5px #39aaaa;
  
 }
+.skill_container{
+    box-shadow: 5px 5px 5px 5px  cyan;
+ 
+    
+
+}
 .resume_heading1 {
     font-size: 40px;
     font-weight: bolder;
@@ -230,7 +226,7 @@ text-shadow: 3px 3px 5px rgb(49, 11, 185);
     
 }
 .card:hover{
-      /* transform: scale(1.15);   */
+       transform: scale(1.15);   
    box-shadow: 5px 5px 5px 5px  cyan;
    
 
