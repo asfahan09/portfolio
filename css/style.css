@@ -9,11 +9,22 @@ body{
 }
 /* navbar */
 #logo_nav {
-    color:  #39aaaa;
-    text-shadow: 1px 1px 5px  #39aaaa;
+    background: linear-gradient(cyan, cyan);
+    text-shadow: 1px 1px 5px cyan;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bolder;
     font-size: 30px;
      padding-left: 5%; 
+}
+#logo_nav2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-left: 5%; 
+    
 }
 .nav-link {
     font-weight: bolder;
