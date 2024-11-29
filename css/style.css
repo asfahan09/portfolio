@@ -30,6 +30,12 @@ body{
     font-weight: bolder;
     color: #39aaaa;
 }
+nav a:hover {
+    text-decoration: underline;
+    color: #00f0ff;
+    transition: 0.3s;
+  }
+  
 .firstimg{
     box-shadow: 1px 5px 15px 5px cyan;
 }
@@ -102,6 +108,7 @@ body{
     color:white;
      /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  */
     /* font-size: 20px; */
+    
     text-align: justify;
 }
 .font_link i {
@@ -161,12 +168,9 @@ body{
     text-shadow: 1px 1px 5px #39aaaa;
  
 }
-.skill_container{
-    box-shadow: 5px 5px 5px 5px  cyan;
- 
-    
 
-}
+
+
 .resume_heading1 {
     font-size: 40px;
     font-weight: bolder;
