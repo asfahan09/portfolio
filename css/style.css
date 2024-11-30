@@ -30,11 +30,7 @@ body{
     font-weight: bolder;
     color: #39aaaa;
 }
-nav a:hover {
-    text-decoration: underline;
-    color: #00f0ff;
-    transition: 0.3s;
-  }
+
   
 .firstimg{
     box-shadow: 1px 5px 15px 5px cyan;
