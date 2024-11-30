@@ -47,7 +47,7 @@
   <!-- contact us -->
 
   <main>
-    <div class="container  mt-5 animate__animated wow animate__fadeInLeft" >
+    <div class="container  mt-5 animate__animated wow animate__fadeInDown" >
       <div class="row">
              
              <div class="col-md-6 col-xxl-6 col-lg-6 col-12  ">
@@ -76,12 +76,13 @@
             <center>
               
       
-              <form action="" class="animate__animated wow animate__fadeInLeft" >
-                <input type="text" placeholder="Name" class="form-control w-75 mt-5 bg-dark text-light border border-info">
-                <input type="text" placeholder="Email" class="border border-info form-control w-75 mt-5 bg-dark text-light">
-                <input type="text" placeholder="Phone" class="border border-info form-control w-75 mt-5 bg-dark text-light">
-                <textarea class="form-control w-75 mt-5 text-light bg-dark border border-info" placeholder="Massege  "></textarea>
-                <input type="submit" value="Submit" class="btn_submit btn w-75 mt-5">
+              <form action="" method="post" class="animate__animated wow animate__fadeInDown" >
+                <input type="text" id="full_name" placeholder="Name" class="form-control w-75 mt-5 bg-dark text-light border border-info">
+                <input type="text" id="email" placeholder="Email" class="border border-info form-control w-75 mt-5 bg-dark text-light">
+                <input type="text" id="phone" placeholder="Phone" class="border border-info form-control w-75 mt-5 bg-dark text-light">
+                <textarea id="message" class= "form-control w-75 mt-5 text-light bg-dark border border-info" placeholder="Massege  "></textarea>
+                <input type="button" onclick="sendbtn()" value="Submit" class="btn_submit btn w-75 mt-5">
+
       
               </form>
             </center>

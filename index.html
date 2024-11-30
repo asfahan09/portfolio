@@ -10,6 +10,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "deMeAzX4VkNVv1DgQ",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -69,10 +79,10 @@
 
   <br><br><br><br>
   <!-- about_section -->
-  <section class="about_section mt-5 bg-dark w-100 animate__animated wow animate__fadeInLeft ">
+  <section class="about_section mt-5 bg-dark w-100 animate__animated wow animate__fadeInDown ">
     
     <h1 class="about_heading mt-5 mb-5 ">About Me</h1>
-    <div class="container mt-5 animate__animated wow animate__fadeInLeft  about_text" >
+    <div class="container mt-5 animate__animated wow animate__fadeInDown about_text" >
       <div class="row">
       
         <div class="col-md-4 col-xxl-4 col-lg-4 col-12  ">
@@ -106,11 +116,11 @@
 
   <!-- services -->
    <br><br><br><br>
-  <section class="about_section mt-5  w-100 animate__animated wow animate__fadeInLeft ">
+  <section class="about_section mt-5  w-100 animate__animated wow animate__fadeIn ">
     <h1 class="about_heading mt-5 mb-5 ">services</h1>
-    <div class="container mt-5 animate__animated wow animate__fadeInLeft  service_text" >
+    <div class="container mt-5 animate__animated wow animate__fadeIn service_text" >
 
-      <div class="row animate__animated wow animate__fadeInLeft ">
+      <div class="row animate__animated wow animate__fadeIn ">
         <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
           <br><br>
           <div class="card bg-dark" style="width: 20rem;">
@@ -164,13 +174,13 @@
       <h1 class=" about_heading">Projects</h1>
     </div>
 
-   <div class="row animate__animated wow animate__fadeInLeft ">
+   <div class="row animate__animated wow animate__fadeIn ">
     <div class="col-md-4 col-xxl-4 col-lg-4 col-12">
       <br><br>
       <div class="card" style="width: 18rem;">
         <img src="picture/Capture.png" class="card-img-top img-fluid " alt="...">
         <div class="card-body  bg-dark text-light">
-          <div class="row animate__animated wow animate__fadeInLeft ">
+          <div class="row animate__animated wow animate__fadeIn ">
 
             <div class="col-md-10 col-xxl-10 col-lg-10 col-12">       
           <h5 class="card-title ">liberty Electronic</h5>
@@ -197,7 +207,7 @@
           <img src="picture/capture2.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body bg-dark text-light">
-          <div class="row animate__animated wow animate__fadeInLeft ">
+          <div class="row animate__animated wow animate__fadeIn ">
             <div class="col-md-10 col-xxl-10 col-lg-10 col-12">
                   
           <h5 class="card-title ">Online Carts</h5>
@@ -223,7 +233,7 @@
     <div class="card" style="width: 18rem;">
       <img src="picture/project3.PNG" class="card-img-top img-fluid " alt="...">
       <div class="card-body  bg-dark text-light">
-        <div class="row animate__animated wow animate__fadeInLeft ">
+        <div class="row animate__animated wow animate__fadeIn ">
 
           <div class="col-md-10 col-xxl-10 col-lg-10 col-12">       
         <h5 class="card-title ">Amazone clone</h5>
@@ -247,7 +257,7 @@
 <!-- contact us -->
 
 <main>
-  <div class="container  mt-5 animate__animated wow animate__fadeInLeft" >
+  <div class="container  mt-5 animate__animated wow animate__fadeInDown" >
     <div class="row">
            
            <div class="col-md-6 col-xxl-6 col-lg-6 col-12  ">
@@ -276,14 +286,14 @@
         
           <center>
     
-            <form action="" class="animate__animated wow animate__fadeInLeft" >
-              <input type="text" placeholder="Name" class="form-control w-75 mt-5 bg-dark text-light border border-info">
-              <input type="text" placeholder="Email" class="border border-info form-control w-75 mt-5 bg-dark text-light">
-              <input type="text" placeholder="Phone" class="border border-info form-control w-75 mt-5 bg-dark text-light">
-              <textarea class="form-control w-75 mt-5 text-light bg-dark border border-info" placeholder="Massege  "></textarea>
-              <input type="submit" value="Submit" class="btn_submit btn w-75 mt-5">
-    
+            <form action="" class="animate__animated wow animate__fadeInDown">
+              <input type="text" id="full_name" placeholder="Name" class="form-control w-75 mt-5 bg-dark text-light border border-info">
+              <input type="email" id="email" placeholder="Email" class="border border-info form-control w-75 mt-5 bg-dark text-light">
+              <input type="text" id="phone" placeholder="Phone" class="border border-info form-control w-75 mt-5 bg-dark text-light">
+              <textarea id="message" class="form-control w-75 mt-5 text-light bg-dark border border-info" placeholder="Message"></textarea>
+              <input type="button" onclick="sendbtn()" value="Submit" class="btn_submit btn w-75 mt-5">
             </form>
+            
           </center>
              </div>
        
