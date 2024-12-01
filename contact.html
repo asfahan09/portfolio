@@ -10,6 +10,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+  publicKey: "deMeAzX4VkNVv1DgQ",
+});
+})();
+</script>
 </head>
 
 <body>
@@ -74,17 +84,15 @@
           <div class="col-md-6 col-xxl-6 col-lg-6 col-12  ">
           
             <center>
-              
-      
-              <form action="" method="post" class="animate__animated wow animate__fadeInDown" >
+    
+              <form action="" class="animate__animated wow animate__fadeInDown">
                 <input type="text" id="full_name" placeholder="Name" class="form-control w-75 mt-5 bg-dark text-light border border-info">
-                <input type="text" id="email" placeholder="Email" class="border border-info form-control w-75 mt-5 bg-dark text-light">
+                <input type="email" id="email" placeholder="Email" class="border border-info form-control w-75 mt-5 bg-dark text-light">
                 <input type="text" id="phone" placeholder="Phone" class="border border-info form-control w-75 mt-5 bg-dark text-light">
-                <textarea id="message" class= "form-control w-75 mt-5 text-light bg-dark border border-info" placeholder="Massege  "></textarea>
+                <textarea id="message" class="form-control w-75 mt-5 text-light bg-dark border border-info" placeholder="Message"></textarea>
                 <input type="button" onclick="sendbtn()" value="Submit" class="btn_submit btn w-75 mt-5">
-
-      
               </form>
+              
             </center>
                </div>
          
