@@ -1,292 +1,77 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-scroll-behavior: smooth;
-}
-body{
-    background-color:#252525;
-}
-/* navbar */
-#logo_nav {
-    background: linear-gradient(cyan, cyan);
-    text-shadow: 1px 1px 5px cyan;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
 
+}
+#logo_nav {
+    background: linear-gradient(rgb(83, 11, 151));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
     font-size: 30px;
-     padding-left: 5%; 
 }
 #logo_nav2 {
-    color: white;
-    font-weight: bolder;
-    font-size: 30px;
-    padding-left: 5%; 
-    
+    color:black;  
 }
 .nav-link {
-    font-weight: bolder;
-    color: #39aaaa;
+    color: #010202;
+    font-weight: 500;
+padding-top: 10px;
+
 }
 
-  
-.firstimg{
-    box-shadow: 1px 5px 15px 5px cyan;
+.nav-link:hover {
+background-color:rgb(83, 11, 151) ;
+color: white;
+transition: 0.3s;
+border-radius: 5px;    
 }
-/* navbar emd */
-
-/* main :start */
-
-
-.webdeveloper_heading2 {
-    color: whitesmoke;
-    font-size: 30px;
+body{
+    background-color: #ECF0F3;
 }
-
-.webdeveloper_heading3 {
-    
-    font-weight: bolder;
-    font-size: 50px;
-    background: linear-gradient(cyan, cyan);
-    text-shadow: 1px 1px 5px cyan;
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.webdeveloper_heading4 {
-    font-weight: bolder;
-    font-size: 25px;
-    color: cyan;
-}
-
-.contact_btn a {
-    color: #252525;
-    text-decoration: none;
-}
-
-.contact_btn {
-    width: 150px;
-    height: 50px;
-    background-color: #39aaaa;
-    border-radius: 10px;
-    border: none;
-}
-
-
-.contact_btn:hover {
-    width: 150px;
-    height: 50px;
-    background-color: cyan;
-    border-radius: 10px;
-    box-shadow:  1px 1px 5px cyan ;
-    border: none;
-}
-
-/* main end */
-/* about section */
-.about_section {
-    text-align: center;
-    
-}
-
-.about_heading {
-    font-size: 40px;
-    font-weight: bolder;
+.btn:hover{
+    background: linear-gradient(to right,rgb(83, 11, 151), rgb(89, 89, 189));
     color: white;
-    
+    transition: 0.3s
+  ;
 }
-
-.about_text {
-    color:white;
-     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  */
-    /* font-size: 20px; */
-    
-    text-align: justify;
+.heading-color{
+    color: rgb(83, 11, 151);
 }
-.font_link i {
-    font-size: 30px;
-    color:#39aaaa;
-    word-spacing: 50x;
-    
+.icons{
+background-color: white;
+color:rgb(83, 11, 151) ;
 }
-.font_link i:hover{
-    color: cyan;
-    text-shadow: 2px 2px 5px cyan;
-    
-}
-
-.font_link a {
-    word-spacing: 30px;
-    text-decoration: none;
-}
-
-
-/* .about_section :end */
-
-/* services */
-.service_text{
-     color:white; 
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    /* font-size: 20px; */
-    text-align: justify;
-}
-
-.service_link  {
-    color: cyan;
-    font-size: 50px;
-    
-}
-
-/* services */
-
-/* footer section */
-.footer_link a {
-    text-decoration: none;
-    color: whitesmoke;
+.icons:hover{
+    background: linear-gradient(rgb(83, 11, 151));
+    color: white;
 
 }
-
-.footer_link {
-    word-spacing: 30px;
+.icons-nav{
+background-color: rgb(83, 11, 151) ;
+color:rgb(250, 245, 255) ;
+}
+.icons-nav:hover{
+    background: linear-gradient(rgb(255, 255, 255));
+    color:  rgb(83, 11, 151);
+}
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 50;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 50;
+    transform: scale(0.8);
+  }
 }
 
-/* home page end */
-
-/* resume :start */
-.resume_heading {
-    font-size: 40px;
-    font-weight: bolder;
-    color:#39aaaa;
-    text-shadow: 1px 1px 5px #39aaaa;
- 
+.react-animation {
+  animation: fadeZoomIn 3s ease-in-out infinite;
 }
 
-
-
-.resume_heading1 {
-    font-size: 40px;
-    font-weight: bolder;
-    color:  cyan;
-    text-shadow: 1px 1px 5px  cyan;
- 
-}
-/* cv button */
-.cv_btn a {
-    color: black;
-    text-decoration: none;
-    
-}
-
-.cv_btn {
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: #39aaaa;
-}
-
-.cv_btn:hover {
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: cyan;
-    box-shadow: 1px 1px 5px  cyan;
-
-}
-.inner_box{
-    background-color: #39aaaa;
-}
-/* cv button */
-
-/* skill sextion */
-.progress-bar {
-    background-image: linear-gradient(to right,orange,orange );
-
-}
-
-/* skill sextion */
-
-
-/* project section */
-.project_heading {
-    font-size: 40px;
-    font-weight: bolder;
-    color:  #39aaaa;
-    text-shadow: 1px 1px 5px  #39aaaa;
-}
-
-.project1 a {
-    text-decoration: none;
-    color: black;
-}
- .card{
-    box-shadow: 5px 5px 5px 5px #39aaaa;
-    border-radius: 10px;  
-    transition: all 0.2s;
-    
-    
-}
-.card:hover{
-    
-   box-shadow: 5px 5px 5px 5px  cyan;
-   
-
-
-} 
-.showicon{
-    text-decoration: none ;
-    font-size: 30px;
-    color:#39aaaa;
-}
-.showicon:hover{
-    color: cyan;
-    text-shadow: 2px 2px 5px cyan;
-}
-
-/* project section */
-
-
-/* contact section */
-.contact_me {
-    font-size: 40px;
-    font-weight: bolder;
-    color:#39aaaa;
-    text-shadow: 1px 1px 5px #39aaaa;
-}
-
-.btn_submit {
-    height: 50px;
-    background-color: #39aaaa;
-    border-radius: 10px;
-    border: none;
-    color: black;
-}
-
-.btn_submit:hover {
-    height: 50px;
-    box-shadow: 1px 1px 5px cyan;
-    background-color: cyan;
-    border-radius: 10px;
-    border: none;
-    color: black;
-}
-.card-text{
-text-align: justify;
-
-}
-
-.contact_section {
-    height: 700px;
-}
-
-.conatct_icon {
-    color:#39aaaa;
-    font-size: 30px;
-}
-
-/* .contact_section */
