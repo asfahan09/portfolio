@@ -1,216 +1,822 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "deMeAzX4VkNVv1DgQ",
-      });
-   })();
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
 
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg nav_col navbar-light text-dark ">
-    <div class="container">
-      <a class="navbar-brand " href="index.html" id="logo_nav2"><i class="fa-solid fa-code" id="logo_nav"></i> <span class="fs-3 fw-medium">Asfahan.</span></a>
+  <!-- section 1  -->
+  <div class="relative">
 
 
-     
+    <!-- section 1 -->
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto ms-lg-5 mb-2 mb-lg-0" style="font-size: 17px;">
-          <li class="nav-item mx-2">
-            <a class=" nav-link py-1 px-2 " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link py-1 px-2 " aria-current="page" href="skill.html">Skills</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link py-1 px-2" aria-current="page" href="project.html">Project</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link  py-1 px-2" aria-current="page" href="contact.html">Contact</a>
-          </li>
-        </ul>     
-      </div>
+    <!-- SPLIDE CONTAINER -->
+    <div class="bg-center bg-cover bg-[#eff6fe]  lg:h-[100vh] h-[100vh]"
+      style="background-image: url('assets/images/lilac-ivory-blue-color-gradient-260nw-2533478765.jpg');">
+      <!-- Header -->
+      <header class=" bg-transparent" id="main-header">
+        <nav id="main-header" class="max-w-[1320px]  h-[92px] mx-auto flex items-center justify-between px-4 relative">
 
-      <button class="btn px-4  py-2 border ">Contac us</button>
- <div class="icons-nav rounded-circle d-flex align-items-center justify-content-center shadow ms-3" style="width: 40px; height: 40px;">
-    <i class="fa-solid fa-bars fs-6"></i>
-  </div>
+          <!--  Mobile: Toggle Button (Left) - Only show below 886px -->
+          <button class="hidden max-[885px]:block absolute left-4" id="mobile-menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
 
+          <!--  Logo (Centered on mobile) -->
+          <a href="#" class="flex items-center space-x-3 z-10
+        max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
+            <i class="fa-solid fa-code" id="logo_nav"></i>
+            
+            Asfahan
+          </a>
 
+          <!--  Desktop Nav Menu (hide below 886px) -->
+          <ul
+            class="hidden min-[886px]:flex space-x-8 lg:text-[19px] text-[12px] font-medium absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <li><a href="#" class="hover:text-blue-700">Home</a></li>
+            <li><a href="#" class="hover:text-blue-700">Service</a></li>
+            <li><a href="#" class="hover:text-blue-700">About</a></li>
+            <li><a href="#" class="hover:text-blue-700">Expertise</a></li>
+            <li><a href="#" class="hover:text-blue-700">Project</a></li>
+            <li><a href="#" class="hover:text-blue-700">Blog</a></li>
+          </ul>
 
-    </div>
-    
-  </nav>
-  <!-- navbar end  -->
-
- 
-<main>
-  <!-- section 1 -->
-   <section>
-    <div class="container ">
-      <div class="row mt-5 ">
-<div class="col-lg-4 col-12">
-  <div class="position-relative rounded-4 shadow" style="top: 2rem;  border: 1px solid rgb(204, 200, 200);">
-    
-    <!-- Image -->
-    <img src="picture/WhatsApp Image 2025-06-09 at 19.13.29_cdfe8840.jpg" alt="" class="w-100 h-100 p-4 object-fit-cover">
-    
-  <!-- Icons on top of image -->
-<div class="icons-link d-flex justify-content-center gap-3 position-absolute bottom-0 start-50 translate-middle-x mb-5">
-  <div class="icons rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 40px; height: 40px;">
-    <i class="fa-brands fa-facebook fs-5"></i>
-  </div>
-  <div class="icons rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 40px; height: 40px;">
-   <i class="fa-brands fa-instagram fs-5"></i>
-  </div>
-  <div class="icons rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 40px; height: 40px;">
-    <i class="fa-brands fa-github fs-5"></i>
-  </div>
-
-  <div class="icons rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 40px; height: 40px;">
- <i class="fa-brands fa-linkedin fs-5"></i>
-  </div>
-</div>
-
-
-  </div>
-</div>
-
-
-          <div class="col-lg-8 col-12 mt-5 pt-4">
-            <div style="font-size: 13px;">
-             <i class="fa fa-home " aria-hidden="true"></i> <span class="poppins-thin ms-2 fw-medium">INTRODUCE</span>
+          <!--  Contact Info (hide below 886px) -->
+          <div class="hidden min-[886px]:flex items-center gap-3">
+            <div class="flex items-center justify-center h-[40px] w-[40px]">
+              <i class="fa-solid fa-envelope text-blue-800 text-[28px]"></i>
             </div>
-
-         <h1 class="poppins-thin fw-light mt-4">Say Hi From <span class="heading-color fw-semibold text-nowrap">Muhammad Asfahan</span>,
-        Designer And Developer
-        </h1>
-
-        <p class="poppins-thin text-secondary ms-1 mt-4 " style="font-size: 18px;">I'm a passionate web developer focused on creating modern, responsive websites that look great on any device.</p>
-
-       <button class="btn px-4 mt-4 py-2 border animated-border" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  About me
-</button>
-
-        <div class="d-flex justify-content-center">
-          <i class="fa-solid fa-arrow-down fs-4" style="color:  rgb(83, 11, 151);"></i>
-        </div>
-
-     
-        </div>
-      </div>
-    </div>
-   </section>
-
-   <!-- section 2 About us -->
-<!-- Modal -->
- <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog  modal-lg ">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8">
-              <div>
-                <h3 class="heading-color fw-semibold poppins-thin">About us</h3>
-              </div>
-              <div>
-                <p class="poppins-thin">We specialize in building full-stack web applications using the MERN stack — MongoDB, Express.js, React, and Node.js. With expertise across the entire development cycle, we deliver seamless, scalable, and modern web solutions tailored to your business needs.</p>
-              </div>
-<div class="d-flex flex-wrap gap-2 col-lg-8">
-  <div class="border px-4 py-2 rounded-2">Html</div>
-  <div class="border px-4 py-2 rounded-2">Css</div>
-  <div class="border px-4 py-2 rounded-2">JavaScript</div>
-  <div class="border px-4 py-2 rounded-2">ReactJs</div>
-  <div class="border px-4 py-2 rounded-2">NodeJs</div>
-  <div class="border px-4 py-2 rounded-2">MongoDb</div>
-  <div class="border px-4 py-2 rounded-2">ExpressJs</div>
-  <div class="border px-4 py-2 rounded-2">Tailwind</div>
-  <div class="border px-4 py-2 rounded-2">.Net</div>
-</div>
-
-<div>
-  <h3 class="poppins-thin heading-color fw-semibold mt-3">Mern stack</h3>
-</div>
-
-<div class="d-flex gap-3 mt-3">
-  <img src="picture/MongoDB (1).png" alt="MongoDB" width="40" height="40" 
-       data-bs-toggle="tooltip" title="MongoDB">
-       
-  <img src="picture/Express.png" alt="Express.js" width="40" height="40" 
-       data-bs-toggle="tooltip" title="Express.js">
-       
-  <img src="picture/React.png" alt="React" width="40" height="40" 
-       data-bs-toggle="tooltip" title="React.js">
-       
-  <img src="picture/Node.js.png" alt="Node.js" width="40" height="40" 
-       data-bs-toggle="tooltip" title="Node.js">
-</div>
-
+            <div>
+              <p class="text-[#666666] text-[14px] leading-none">Have any Questions?</p>
+              <h5><a href="mailto:info@bestup.com" class="font-bold text-black text-[20px]">info@bestup.com</a></h5>
             </div>
-           <div class="col-lg-4 d-flex align-items-center">
-  <img src="picture/React.png" alt="" class="img-fluid w-100 object-fit-cover react-animation">
-</div>
+          </div>
+        </nav>
+
+        <!-- Mobile Off-Canvas Menu -->
+        <div id="mobile-menu"
+          class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 max-[885px]:block hidden">
+          <div class="py-2 px-3 flex content-between items-center justify-between">
+            <div>
+              <img src="assets/images/logo.png" class="h-10" alt="">
+            </div>
+            <div>
+              <i id="mobile-menu-close" class="fa-solid fa-x cursor-pointer text-xl"></i>
+            </div>
+          </div>
+
+          <ul class="flex flex-col p-6 space-y-4 text-[16px] font-medium">
+            <li><a href="#" class="hover:text-blue-700">Home</a></li>
+            <li><a href="#" class="hover:text-blue-700">Service</a></li>
+            <li><a href="#" class="hover:text-blue-700">About</a></li>
+            <li><a href="#" class="hover:text-blue-700">Expertise</a></li>
+            <li><a href="#" class="hover:text-blue-700">Project</a></li>
+            <li><a href="#" class="hover:text-blue-700">Blog</a></li>
+            <li><a href="mailto:info@bestup.com" class="text-blue-800 font-semibold">info@bestup.com</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- Header -->
+
+      <!-- Header end -->
+
+      <!-- Header end -->
+      <!-- SPLIDE WRAPPER -->
+      <section class="">
+        <!-- custom arrow -->
+        <div class="splide  banner-first  max-w-[1320px] px-4 mx-auto h-full  " aria-label="Hero Banner"
+          style="position: unset;">
+          <div class="splide__track">
+            <ul class="splide__list">
+
+              <!-- SLIDE 1 -->
+              <li class="splide__slide ">
+                <div class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 items-center gap-10 py-custom h-full">
+
+
+
+                  <div class="space-y-6 relative text-center text-center mt-10">
+                    <h1 class="lg:text-[80px] text-[42px] font-medium leading-tight">
+                      Say Hello !
+                      I am Muhammad Asfahan
+
+                    </h1>
+
+                    <p class="text-black text-[18px] leading-relaxed">
+                      I’m a passionate Full Stack Developer building modern, scalable web applications.
+                      I work across frontend and backend to deliver complete digital solutions.
+                      Focused on performance, security, and clean architecture.
+
+
+                    </p>
+                    <div>
+
+
+                      <button
+                        class="relative overflow-hidden text-white font-bold py-[14px] px-[35px] bg-gradient-to-r from-[#1351d8] to-[#9c00ff] group rounded-lg">
+
+                        <!-- Hover Fill (Same clip-path as button) -->
+                        <span
+                          class="absolute inset-0 bg-[#0e2364] scale-x-0 origin-center transition-transform duration-500 ease-in-out group-hover:scale-x-170 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+                        </span>
+
+                        <!-- Button Text -->
+                        <span class="relative z-10 font-medium">Contact me</span>
+                      </button>
+                      <div class="flex justify-center mt-20">
+                        <a href="#about" title="arrow">
+                          <i class="fa-solid fa-arrow-down text-3xl text-[#1351D8] animate-bounce cursor-pointer"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </li>
+
+
+
+            </ul>
 
           </div>
         </div>
+      </section>
+    </div>
+
+
+  </div>
+  <!-- section 1 -->
+
+  <!-- section 2 start -->
+  <div class="container mx-auto w-full max-w-[1322px]  p-4  lg:mt-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <!-- Text Content -->
+      <div class="lg:col-span-7  " data-aos="fade-in">
+        <div class="mt-10 lg:mt-20">
+          <h3
+            class="uppercase  font-bold text-lg lg:text-start md:text-start text-center bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-transparent bg-clip-text  ">
+            About us</h3>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl mt-4 font-medium lg:text-start md:text-start text-center">Full Stack Web Developer</h1>
+          <p class="mt-6 text-gray-500 text-base md:text-lg leading-relaxed">
+            I am a full stack web developer specializing in building modern, responsive, and scalable web applications.
+            I work across both frontend and backend to deliver complete, high-quality digital solutions.
+
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            <!-- Repeat this block as needed -->
+            <div class="flex items-center">
+              <span
+                class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
+                <i class="fa-solid fa-check text-white text-sm"></i>
+              </span>
+              <span class="font-semibold ms-3 text-sm sm:text-base">Responsive</span>
+            </div>
+            <div class="flex items-center">
+              <span
+                class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
+                <i class="fa-solid fa-check text-white text-sm"></i>
+              </span>
+              <span class="font-semibold ms-3 text-sm sm:text-base">API Integration </span>
+            </div>
+            <div class="flex items-center">
+              <span
+                class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
+                <i class="fa-solid fa-check text-white text-sm"></i>
+              </span>
+              <span class="font-semibold ms-3 text-sm sm:text-base">Modern Framework</span>
+            </div>
+            <div class="flex items-center">
+              <span
+                class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
+                <i class="fa-solid fa-check text-white text-sm"></i>
+              </span>
+              <span class="font-semibold ms-3 text-sm sm:text-base">Frontend & Backend</span>
+            </div>
+            <div class="flex items-center">
+              <span
+                class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
+                <i class="fa-solid fa-check text-white text-sm"></i>
+              </span>
+              <span class="font-semibold ms-3 text-sm sm:text-base">Security & Optimization</span>
+            </div>
+            <div class="flex items-center">
+              <span
+                class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
+                <i class="fa-solid fa-check text-white text-sm"></i>
+              </span>
+              <span class="font-semibold ms-3 text-sm sm:text-base">Maintainable Code</span>
+            </div>
+          </div>
+        </div>
       </div>
-  
+
+      <!-- Image Content -->
+      <div class="lg:col-span-5  flex justify-center" data-aos="fade-in">
+        <div class="relative group w-full max-w-[500px]">
+          <!-- Background shape -->
+          <div
+            class="absolute left-0 top-0 -z-10 w-full h-full rotate-3 rounded-[20px] bg-gradient-to-r from-[#1351d8] to-[#9c00ff] transition-transform duration-300 group-hover:rotate-[2deg] md:rotate-[5deg]">
+          </div>
+
+          <!-- Image -->
+          <div class="relative">
+            <img src="assets/images/WhatsApp Image 2025-12-11 at 12.44.44 PM.jpeg" alt="About"
+              class="w-full h-auto max-h-[500px] rounded-[20px] relative z-10 before:absolute before:-bottom-px before:-right-px before:left-0 before:z-[2] before:h-[65px] before:bg-white before:[clip-path:polygon(100%_0%,0%_100%,100%_100%)] dark:before:bg-accent-700 after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100 group-hover:transition-all group-hover:after:h-full group-hover:after:opacity-0 group-hover:after:duration-400 group-hover:after:ease-linear" />
+          </div>
+
+
+        </div>
+      </div>
     </div>
   </div>
+  <!-- section 2 end -->
+
+  <!-- section 3  -->
+
+  <section class=" bg-cover object-cover bg-[#eff6fe]"style="background-image: url('assets/images/27 (1).png')">
+    <div class="flex  justify-center  ">
+
+      <div class="border-1 border-[#cccccc] rounded lg:mt-30 mt-20 bg-transparent">
+        <span
+          class="p-3 text-[20px] uppercase font-bold bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-transparent bg-clip-text">
+          What I Offer
+        </span>
+      </div>
+
+    </div>
+
+    <div class="max-w-[1320px] p-4 mx-auto">
+      <div class="mt-3">
+        <h3 class="text-black font-medium lg:text-[55px] text-[36px] text-center  ">Complete Web Solutions for Your
+          Brand </h3>
+
+
+      </div>
+
+
+      <!-- section 2  -->
+      <div class="container  mx-auto w-full max-w-[1322px]  px-4 mt-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2 gap-10 ">
+
+
+          <div
+            class="w-full px-10 py-10 bg-white group/service shadow-5 transition-transform duration-350 relative z-1 block h-full space-y-6 overflow-hidden rounded-5 p-6 md:space-y-7 md:p-10 hover:[transform:translateY(-.5rem)] hover:border-b-2 border-[#9c00ff] rounded  group-hover/service:border-b-1">
+
+            <div class="flex items-center gap-5  ">
+              <span
+                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 group-hover/service:text-[#9c00ff] md:text-[4rem]">
+                <i class="fa-solid fa-code text-[45px]" id="logo_nav"></i>
+              </span>
+              <h2 class="font-bold leading-[1.25] lg:text-[24px] text-[18px] ">
+                <a target="_self" href="/services/single">Website Development</a>
+              </h2>
+            </div>
+
+            <p class="mb-3 font-normal text-gray-700 text-[20px] dark:text-gray-400 mt-6 ">Here are the biggest
+              enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+
+
+          </div>
+
+          <div
+            class="w-full px-10 py-10 bg-white group/service shadow-3 transition-transform duration-350 relative z-1 block h-full space-y-6 overflow-hidden rounded-5 p-6 md:space-y-7 md:p-10 hover:[transform:translateY(-.5rem)] hover:border-b-2 border-[#9c00ff] rounded  group-hover/service:border-b-1">
+
+            <div class="flex items-center gap-5  ">
+              <span
+                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 group-hover/service:text-[#9c00ff] md:text-[4rem]">
+                <i class="fa-solid fa-paintbrush text-[45px]"></i>
+              </span>
+              <h2 class="font-bold leading-[1.25] lg:text-[24px] text-[18px] ">
+                <a target="_self" href="/services/single">Website Designing</a>
+              </h2>
+            </div>
+
+            <p class="mb-3 font-normal text-gray-700 text-[20px] dark:text-gray-400 mt-6 ">Here are the biggest
+              enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+
+
+          </div>
+
+          <div
+            class="w-full px-10 py-10 bg-white group/service shadow-3 transition-transform duration-350 relative z-1 block h-full space-y-6 overflow-hidden rounded-5 p-6 md:space-y-7 md:p-10 hover:[transform:translateY(-.5rem)] hover:border-b-2 border-[#9c00ff] rounded  group-hover/service:border-b-1">
+
+            <div class="flex items-center gap-5  ">
+              <span
+                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 group-hover/service:text-[#9c00ff] md:text-[4rem]">
+                <i class="fa-solid fa-mobile-screen-button text-[45px]"></i>
+
+              </span>
+              <h2 class="font-bold leading-[1.25] lg:text-[24px] text-[18px] ">
+                <a target="_self" href="/services/single">App Development</a>
+              </h2>
+            </div>
+
+            <p class="mb-3 font-normal text-gray-700 text-[20px] dark:text-gray-400 mt-6 ">Here are the biggest
+              enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <!-- section 2 -->
+    </div>
+
+
+  </section>
+  <!-- section 3 end  -->
+
+<!-- section 4 start -->
+<div class="container mx-auto w-full max-w-[1322px] p-4 mt-5 lg:mt-10">
+  <h1 class="text-3xl md:text-4xl lg:text-5xl text-center  font-medium ">Tech Stack</h1>
+          <p class="mt-6 text-gray-500 text-base md:text-lg text-center leading-relaxed">
+            Technologies I work with to build modern web & mobile applications
+          </p>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-5">
+
+    <!-- Skill Card -->
+ <div class="group bg-white/5  
+            border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#E34F26] hover:shadow-[0_10px_40px_rgba(227,79,38,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#E34F26] group-hover:scale-110">
+    <i class="fa-brands fa-html5"></i>
+  </span>
+
+  <p class="font-semibold">HTML</p>
 </div>
-<!-- Button trigger modal -->
-
-</main>
 
 
+    <!-- Skill Card -->
+  <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#1572B6] hover:shadow-[0_10px_40px_rgba(21,114,182,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#1572B6] group-hover:scale-110">
+    <i class="fa-brands fa-css3-alt"></i>
+  </span>
+
+  <p class="font-semibold">CSS</p>
+</div>
+
+
+    <!-- Skill Card -->
+   <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#F7DF1E] hover:shadow-[0_10px_40px_rgba(247,223,30,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#F7DF1E] group-hover:scale-110">
+    <i class="fa-brands fa-js"></i>
+  </span>
+
+  <p class="font-semibold">JavaScript</p>
+</div>
+
+    <!-- Skill Card -->
+<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#61DAFB] hover:shadow-[0_10px_40px_rgba(97,218,251,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#61DAFB] group-hover:scale-110">
+    <i class="fa-brands fa-react"></i>
+  </span>
+
+  <p class="font-semibold">React</p>
+</div>
+
+
+
+    <!-- Skill Card -->
+   <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#47A248] hover:shadow-[0_10px_40px_rgba(71,162,72,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#47A248] group-hover:scale-110">
+    <i class="fa-solid fa-database"></i>
+  </span>
+
+  <p class="font-semibold">MongoDB</p>
+</div>
+<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#FF2D20] hover:shadow-[0_10px_40px_rgba(255,45,32,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#FF2D20] group-hover:scale-110">
+    <i class="fa-brands fa-laravel"></i>
+  </span>
+
+  <p class="font-semibold">Laravel</p>
+</div>
+
+<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#339933] hover:shadow-[0_10px_40px_rgba(51,153,51,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#339933] group-hover:scale-110">
+    <i class="fa-brands fa-node-js"></i>
+  </span>
+
+  <p class="font-semibold">Node.js</p>
+</div>
+
+<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#00758F] hover:shadow-[0_10px_40px_rgba(0,117,143,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#00758F] group-hover:scale-110">
+    <i class="fa-solid fa-database"></i>
+  </span>
+
+  <p class="font-semibold">MySQL</p>
+</div>
+
+<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#444444] hover:shadow-[0_10px_40px_rgba(68,68,68,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#444444] group-hover:scale-110">
+    <i class="fa-brands fa-node-js"></i>
+  </span>
+
+  <p class="font-semibold">Express.js</p>
+</div>
+<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+            flex flex-col items-center justify-center text-center
+            transition-all duration-300 hover:-translate-y-2
+            hover:border-[#02569B] hover:shadow-[0_10px_40px_rgba(2,86,155,0.45)]">
+
+  <span class="text-4xl mb-3 transition-transform duration-300
+               text-[#02569B] group-hover:scale-110">
+    <i class="fa-brands fa-flutter"></i>
+  </span>
+
+  <p class="font-semibold">Flutter</p>
+</div>
+
+
+
+  </div>
+
+</div>
+<!-- section 4 end -->
+
+
+ 
+ 
+  
+
+
+
+
+  <!-- section  9 -->
+  <section class="relative py-20">
+
+    <div class="absolute inset-0 bg-[#eff6fe] h-50 z-0"></div>
+
+
+    <div class="relative z-10 max-w-[1320px] px-4 mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+
+        <div class="col-span-5">
+          <div>
+            <img src="assets/images/36.png" alt="">
+          </div>
+
+          <div class="mt-10">
+            <h4 class="font-bold text-[36px] text-black" data-aos="fade-up">Contact Information</h4>
+            <p class="mt-4 text-gray-600 font-medium" data-aos="fade-up">Plan upon yet way get cold spot its week.
+              Almost do am or limits hearts. Resolve parties but why she shewing.</p>
+          </div>
+
+          <div>
+            <!-- Phone -->
+            <div class="flex items-start space-x-4 mt-10">
+              <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-[18px]"><i class="fas fa-phone-alt"></i></span>
+              </div>
+              <div class="text-left">
+                <h3 class="font-bold text-[18px] sm:text-[20px] text-black">Hotline</h3>
+                <p class="text-black font-medium text-[17px] sm:text-[16px]">+4733378901</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="flex items-start space-x-4 mt-10">
+              <div class="w-12 h-12 bg-[#0EA3C1] rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-[18px]"><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="text-left">
+                <h3 class="font-bold text-[18px] sm:text-[20px] text-black">Location</h3>
+                <p class="text-gray-600 font-medium text-[15px] sm:text-[16px]">Our Location 55</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-start space-x-4 mt-10">
+              <div class="w-12 h-12 bg-[#0E2769] rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-[18px]"><i class="fas fa-envelope-open-text"></i></span>
+              </div>
+              <div class="text-left">
+                <h3 class="font-bold text-[18px] sm:text-[20px] text-black">Official Email</h3>
+                <p class="text-black text-[17px] font-medium sm:text-[16px]">info@agrul.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-span-7">
+          <div class="bg-white shadow-lg rounded">
+            <div class="lg:py-[60px] lg:px-[80px] p-6">
+              <button class="mx-auto border border-[#cccccc] rounded bg-transparent items-center py-2 px-6">
+                <span
+                  class="text-[20px] font-bold bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-transparent text-center bg-clip-text">Have
+                  Questions?</span>
+              </button>
+
+              <div class="mt-5">
+                <h4 class="lg:text-[48px] text-[36px] font-bold">Send us a Message</h4>
+              </div>
+
+              <div class="mt-10">
+                <input type="text"
+                  class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 "
+                  placeholder="Name">
+
+                <div class="grid lg:grid-cols-2 md:grid-col-2 grid-cols-1 mt-10 gap-7">
+                  <input type="email" placeholder="Email"
+                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                  <input type="text" placeholder="Subject"
+                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                </div>
+
+                <div class="mt-6">
+                  <textarea placeholder="Tell Us About Project*"
+                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 h-50 focus:outline-none focus:ring-0 "></textarea>
+                </div>
+                <div class="mt-3">
+                  <a href="#"
+                    class="group relative inline-block bg-[#1351d8] rounded-lg px-[30px] py-[18px] lg:w-[220px] w-[219px] font-medium text-[17px] text-white overflow-hidden">
+                    <!-- Hover Background -->
+                    <span
+                      class="absolute inset-0 bg-[#0e2364] scale-x-0 origin-center transition-transform duration-500 ease-in-out group-hover:scale-x-150 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]"></span>
+
+                    <!-- Content -->
+                    <span class="relative z-10 flex items-center gap-2">
+                      <i class="fa fa-paper-plane"></i>
+                      Get In Touch
+                    </span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section  9 -->
 
   
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    [...tooltipTriggerList].forEach(tooltipTriggerEl => {
-      new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-  });
-</script>
+
+  <!-- section 12 -->
+  <footer class="theme-before h-auto text-white font-sans mt-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12">
+
+
+      <!-- Right Column with 4 Grid Columns -->
+      <div class="col-span-12">
+        <div class="bg-[#0b1f4a] h-full w-full bg-cover bg-center relative"
+          style="background-image: url('assets/images/banner-8.jpg');">
+
+
+          <div class="f-item about max-w-[1320px] px-4 py-20 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-30 text-sm">
+
+              <div class="relative z-[5]">
+                <!-- Logo -->
+                <img src="assets/images/logo-light-solid.png" alt="Logo" class="w-[170px] h-[68px] mb-4">
+
+                <!-- Description -->
+                <p class="text-sm leading-relaxed max-w-xs text-start  mb-6">
+                  Nirman has been operating the construction market since 2016. Providing services in the line
+                  construction area, our main objective is to provide quality.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="flex space-x-4 ">
+                  <a href="#" class="bg-[#1e316f] hover:bg-[#31458c] p-3 rounded-full">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="bg-[#1e316f] hover:bg-[#31458c] p-3 rounded-full">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="bg-[#1e316f] hover:bg-[#31458c] p-3 rounded-full">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" class="bg-[#1e316f] hover:bg-[#31458c] p-3 rounded-full">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+
+
+              <!-- Our Company -->
+              <div>
+                <h4 class="text-white font-bold text-[22px] mb-4">Our Company</h4>
+                <ul class="space-y-2 text-[17px] space-y-4">
+                  <li><a href="#" class="hover:underline">Company Profile</a></li>
+                  <li><a href="#" class="hover:underline">Help Center</a></li>
+                  <li><a href="#" class="hover:underline">Career</a></li>
+                  <li><a href="#" class="hover:underline">Plans & Pricing</a></li>
+                  <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+              </div>
+
+              <!-- Our Services -->
+              <div>
+                <h4 class="text-white font-bold text-[22px]  mb-4">Our Services</h4>
+                <ul class="space-y-2 text-[17px] space-y-4">
+                  <li><a href="#" class="hover:underline">IT Management</a></li>
+                  <li><a href="#" class="hover:underline">Cyber Security</a></li>
+                  <li><a href="#" class="hover:underline">Cloud Computing</a></li>
+                  <li><a href="#" class="hover:underline">IT Consulting</a></li>
+                  <li><a href="#" class="hover:underline">Backup & Recovery</a></li>
+                </ul>
+              </div>
+
+              <!-- Get in Touch -->
+              <div>
+                <h4 class="text-white font-bold text-[22px] mb-4">Get in touch</h4>
+
+                <div class="flex items-start mb-7">
+                  <div class="flex items-center justify-center w-[45px] h-[45px] border border-white rounded-full mr-3">
+                    <i class="fas fa-map-marker-alt text-white text-[16px]"></i>
+                  </div>
+                  <p class="text-[17px] text-white">
+                    123 Main Street, City,
+                  </p>
+                </div>
+
+                <div class="flex items-start mb-7">
+                  <div class="flex items-center justify-center w-[45px] h-[45px] border border-white rounded-full mr-3">
+                    <i class="fas fa-phone-alt text-white text-[16px]"></i>
+                  </div>
+                  <p class="text-[17px] text-white">
+                    +012-345-6789<br>
+                    +012-345-6789
+                  </p>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex items-center justify-center w-[45px] h-[45px] border border-white rounded-full mr-3">
+                    <i class="fas fa-envelope text-white text-[16px]"></i>
+                  </div>
+                  <p class="text-[17px] text-white">
+                    jony@gmail.com<br>
+                    info@example.com
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-set">
+      <div class="max-w-[1320px] px-4 mx-auto ">
+
+        <!-- Left Column -->
+        <div class="flex justify-between text-white py-3">
+          <div>© Copyright 2025. All Rights Reserved by <b class="text-[19px]">validthemes<b></div>
+          <div>
+            <ul class="font-normal text-[17px] flex space-x-4">
+              <li>
+                Terms
+              </li>
+              <li>
+                Privacy
+              </li>
+              <li>
+                Support
+              </li>
+            </ul>
+          </div>
+        </div>
 
 
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="javascript/javascript.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <!-- section 12 -->
+
+
+
+
+
+
+
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    new WOW().init();
-    
-    </script>
+    AOS.init();
+  </script>
+  <script>4
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.getElementById('mobile-menu-toggle');
+      const closeButton = document.getElementById('mobile-menu-close');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      // Toggle open
+      toggleButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('-translate-x-full');
+      });
+
+      // Close via close icon
+      closeButton.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-x-full');
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', function (event) {
+        const isClickInsideMenu = mobileMenu.contains(event.target);
+        const isClickOnToggle = toggleButton.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnToggle) {
+          mobileMenu.classList.add('-translate-x-full');
+        }
+      });
+
+      // Close on link click inside menu
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('-translate-x-full');
+        });
+      });
+    });
+
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="assets/logic.js"></script>
 </body>
 
-</html> 
+</html>
