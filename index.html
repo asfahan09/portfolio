@@ -120,20 +120,41 @@ Building Modern Web Applications
 
       <div class="flex flex-col items-center gap-10">
 
-        <button
-          class="relative overflow-hidden text-white font-bold py-[14px] px-[35px]
-                 bg-gradient-to-r from-[#1351d8] to-[#9c00ff]
-                 group rounded-lg">
+      <section class="py-20">
+  <div class="max-w-[1200px] mx-auto px-4">
 
-          <span
-            class="absolute inset-0 bg-[#0e2364] scale-x-0 origin-center
-                   transition-transform duration-500 ease-in-out
-                   group-hover:scale-x-170 z-0
-                   [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
-          </span>
+   
 
-          <span class="relative z-10 font-medium">Contact me</span>
-        </button>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+      <!-- React -->
+      <div class="skill-float">
+        <i class="fa-brands fa-react text-6xl text-[#61DBFB]"></i>
+        <p class="mt-4 font-semibold">React</p>
+      </div>
+
+      <!-- Laravel -->
+      <div class="skill-float delay-1">
+        <i class="fa-brands fa-laravel text-6xl text-[#F05340]"></i>
+        <p class="mt-4 font-semibold">Laravel</p>
+      </div>
+
+      <!-- Flutter -->
+      <div class="skill-float delay-2">
+        <i class="fa-brands fa-flutter text-6xl text-[#02569B]"></i>
+        <p class="mt-4 font-semibold">Flutter</p>
+      </div>
+
+      <!-- Node -->
+      <div class="skill-float delay-3">
+        <i class="fa-brands fa-node-js text-6xl text-[#3C873A]"></i>
+        <p class="mt-4 font-semibold">Node.js</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
      
 
@@ -149,7 +170,22 @@ Building Modern Web Applications
 
   </div>
   <!-- section 1 -->
+<style>
+  @keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
 
+.skill-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.delay-1 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 1.2s; }
+
+</style>
   <!-- section 2 start -->
   <div class="container mx-auto w-full max-w-[1322px]  p-4  lg:mt-20">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
