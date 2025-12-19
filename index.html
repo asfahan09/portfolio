@@ -16,109 +16,93 @@
 <body style="background-color: rgb(0, 0, 0);">
 
   <!-- section 1  -->
-<header class="relative">
-  <header class=" bg-black" id="main-header">
-        <nav id="main-header" class="max-w-[1320px]  h-[92px] mx-auto flex items-center justify-between px-4 relative">
+<header class="relative min-h-screen flex flex-col overflow-hidden">
 
-          <!--  Mobile: Toggle Button (Left) - Only show below 886px -->
-          <button class="hidden max-[885px]:block absolute left-4" id="mobile-menu-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+  <!-- NAVBAR -->
+  <div class="bg-black relative z-20">
+    <nav class="max-w-[1320px] h-[92px] mx-auto flex items-center justify-between px-4 relative">
 
-          <!--  Logo (Centered on mobile) -->
-          <a href="#" class="flex items-center space-x-3 z-10
-        max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
-            <i class="fa-solid fa-code text-[#b91202]" id="logo_nav"></i>
-            <span class="text-white">
-            Asfahan
-            </span>
-          </a>
+      <!-- Mobile Toggle -->
+      <button class="hidden max-[885px]:block absolute left-4" id="mobile-menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-          <!--  Desktop Nav Menu (hide below 886px) -->
-          <ul
-            class="hidden min-[886px]:flex space-x-8 lg:text-[19px] text-[12px] font-medium absolute left-1/2 text-white top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <li><a href="#" class="hover:text-red-700">Home</a></li>
-            <li><a href="#" class="hover:text-red-700">Service</a></li>
-            <li><a href="#" class="hover:text-red-700">About</a></li>
-            <li><a href="#" class="hover:text-red-700">Expertise</a></li>
-            <li><a href="#" class="hover:text-red-700">Project</a></li>
-            <li><a href="#" class="hover:text-red-700">Blog</a></li>
-          </ul>
+      <!-- Logo -->
+      <a href="#"
+        class="flex items-center space-x-3 z-10 max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
+        <i class="fa-solid fa-code text-[#b91202]"></i>
+        <span class="text-white">Asfahan</span>
+      </a>
 
-          <!--  Contact Info (hide below 886px) -->
-          <div class="hidden min-[886px]:flex items-center gap-3">
-            <div class="flex items-center justify-center h-[40px] w-[40px]">
-              <i class="fa-solid fa-envelope text-red-800 text-[28px]"></i>
-            </div>
-            <div>
-              <p class="text-gray-400 text-[14px] leading-none">Have any Questions?</p>
-              <h5><a href="mailto:info@bestup.com" class=" text-white text-[14px]">muhammadasfahan689@gmail.com</a></h5>
-            </div>
-          </div>
-        </nav>
+      <!-- Desktop Menu -->
+      <ul
+        class="hidden min-[886px]:flex space-x-8 text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <li><a href="#" class="hover:text-red-600">Home</a></li>
+        <li><a href="#" class="hover:text-red-600">Service</a></li>
+        <li><a href="#" class="hover:text-red-600">About</a></li>
+        <li><a href="#" class="hover:text-red-600">Expertise</a></li>
+        <li><a href="#" class="hover:text-red-600">Project</a></li>
+        <li><a href="#" class="hover:text-red-600">Blog</a></li>
+      </ul>
 
-        <!-- Mobile Off-Canvas Menu -->
-        <div id="mobile-menu"
-          class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 max-[885px]:block hidden">
-          <div class="py-2 px-3 flex content-between items-center justify-between">
-            <div>
-              <img src="assets/images/logo.png" class="h-10" alt="">
-            </div>
-            <div>
-              <i id="mobile-menu-close" class="fa-solid fa-x cursor-pointer text-xl"></i>
-            </div>
-          </div>
-
-          <ul class="flex flex-col p-6 text-white space-y-4 text-[16px] font-medium">
-            <li><a href="#" class="hover:text-blue-700 text-white">Home</a></li>
-            <li><a href="#" class="hover:text-blue-700">Service</a></li>
-            <li><a href="#" class="hover:text-blue-700">About</a></li>
-            <li><a href="#" class="hover:text-blue-700">Expertise</a></li>
-            <li><a href="#" class="hover:text-blue-700">Project</a></li>
-            <li><a href="#" class="hover:text-blue-700">Blog</a></li>
-            <li><a href="mailto:info@bestup.com" class="text-blue-800 font-semibold">info@bestup.com</a></li>
-          </ul>
+      <!-- Contact -->
+      <div class="hidden min-[886px]:flex items-center gap-3">
+        <i class="fa-solid fa-envelope text-red-600 text-2xl"></i>
+        <div>
+          <p class="text-gray-400 text-sm leading-none">Have any Questions?</p>
+          <a href="mailto:muhammadasfahan689@gmail.com"
+            class="text-white text-sm">muhammadasfahan689@gmail.com</a>
         </div>
-      </header>
-  <!-- BG Image -->
-  <img src="https://uploads-ssl.webflow.com/646f65e37fe0275cfb808405/646f66cdeeb4ddfdae25a26e_Background%20Hero.svg" alt="" class="absolute -z-10 inline-block h-full w-full object-cover" />
-  <!-- Container -->
-  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-    <!-- Heading Content -->
-    <div class="mx-auto max-w-3xl text-center">
-      <h1 class="mb-6 pb-4 text-4xl font-bold text-white md:text-6xl"> Say Hello I’m Muhammad Asfahan Web Developer </h1>
-      <p class="mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg:mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>
-   <button
-  class="relative overflow-hidden rounded-lg font-bold py-[14px] px-[35px]
-         bg-[#b91202] text-white group">
+      </div>
 
-  <!-- Hover Fill -->
-  <span
-    class="absolute inset-0 bg-white scale-x-0 origin-center
-           transition-transform duration-500 ease-in-out
-           group-hover:scale-x-110 z-0
-           [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
-  </span>
+    </nav>
+  </div>
 
-  <!-- Button Text -->
-  <span
-    class="relative z-10 font-medium transition-colors duration-300
-           group-hover:text-black">
-    Contact me
-  </span>
-</button>
+  <!-- BACKGROUND IMAGE -->
+  <img
+    src="https://uploads-ssl.webflow.com/646f65e37fe0275cfb808405/646f66cdeeb4ddfdae25a26e_Background%20Hero.svg"
+    alt=""
+    class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-    </div>
-    <!-- Logo Cloud -->
-    <div class="mx-auto mt-16 grid max-w-[1040px] grid-cols-2 gap-8 py-20 sm:grid-cols-3 sm:gap-12 md:grid-cols-5">
-      
-   
+  <!-- HERO CONTENT -->
+  <div class="flex-1 flex items-center">
+    <div class="mx-auto w-full max-w-7xl px-5 text-center">
+
+      <h1 class="mb-6 text-4xl md:text-6xl font-bold text-white">
+        Say Hello I’m <span class="text-[#b91202]">Muhammad Asfahan</span><br />
+        Web Developer
+      </h1>
+
+      <p class="mx-auto mb-8 max-w-[520px] text-lg text-gray-400">
+        I’m a full-stack web developer building modern, fast and responsive web
+        applications.
+      </p>
+
+      <!-- BUTTON -->
+      <button
+        class="relative overflow-hidden rounded-lg font-bold py-[14px] px-[35px] bg-[#b91202] text-white group">
+
+        <span
+          class="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-500 ease-in-out
+                 group-hover:scale-x-110 z-0
+                 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+        </span>
+
+        <span class="relative z-10 transition-colors duration-300 group-hover:text-black">
+          Contact Me
+        </span>
+
+      </button>
+
     </div>
   </div>
+
 </header>
+
   <!-- section 2 start -->
   <div class="container mx-auto w-full max-w-[1322px]  p-4  lg:mt-20">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -135,7 +119,7 @@
 
           </p>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 mt-6">
             <!-- Repeat this block as needed -->
             <div class="flex items-center">
               <span
@@ -233,11 +217,11 @@
 
 
           <div
-            class="w-full px-10 py-10 bg-[#141414] group/service shadow-5 transition-transform duration-350 relative z-1 block h-full space-y-6 overflow-hidden rounded-5 p-6 md:space-y-7 md:p-10 hover:[transform:translateY(-.5rem)] rounded-2xl hover:border-b-2 border-[#b91202] rounded  group-hover/service:border-b-1">
+            class="w-full px-10 py-10 bg-[#141414] group/service shadow-5 transition-transform duration-350 relative z-1 block h-full space-y-6 overflow-hidden rounded-5 p-6 md:space-y-7 md:p-10 hover:[transform:translateY(-.5rem)] rounded-2xl md:hover:border-b-2 border-[#b91202] rounded  group-hover/service:border-b-1">
 
             <div class="flex items-center gap-5  ">
               <span
-                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 group-hover/service:text-[#b91202] md:text-[4rem]">
+                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 text-[#b91202] md:text-[4rem]">
                 <i class="fa-solid fa-code text-[45px]" id="logo_nav"></i>
               </span>
               <h2 class="font-bold text-white leading-[1.25] lg:text-[24px] text-[18px] ">
@@ -245,8 +229,8 @@
               </h2>
             </div>
 
-            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 ">Here are the biggest
-              enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 ">  I build fast, secure and scalable websites using modern technologies
+  tailored to your business needs.</p>
 
 
           </div>
@@ -256,7 +240,7 @@
 
             <div class="flex items-center gap-5  ">
               <span
-                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 group-hover/service:text-[#b91202] md:text-[4rem]">
+                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 text-[#b91202] md:text-[4rem]">
                 <i class="fa-solid fa-paintbrush text-[45px]"></i>
               </span>
               <h2 class="font-bold text-white leading-[1.25] lg:text-[24px] text-[18px] ">
@@ -264,8 +248,8 @@
               </h2>
             </div>
 
-            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 ">Here are the biggest
-              enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 "> Creative and user-friendly website designs focused on UI/UX,
+  responsiveness and brand identity.</p>
 
 
           </div>
@@ -275,7 +259,7 @@
 
             <div class="flex items-center gap-5  ">
               <span
-                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 group-hover/service:text-[#b91202] md:text-[4rem]">
+                class="flex-none text-[2.5rem] transition-all duration-300 group-hover/service:scale-90 text-[#b91202] md:text-[4rem]">
                 <i class="fa-solid fa-mobile-screen-button text-[45px]"></i>
 
               </span>
@@ -284,8 +268,8 @@
               </h2>
             </div>
 
-            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 ">Here are the biggest
-              enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 "> High-performance mobile applications for Android and cross-platform
+  solutions with smooth user experience.</p>
 
 
           </div>
@@ -466,7 +450,7 @@
 
 
   <!-- section  9 -->
-  <section class="relative py-20">
+  <section class="relative py-20 mt-30">
 
     <div class="absolute inset-0 bg-[#b91202] h-50 z-0"></div>
 
@@ -477,12 +461,12 @@
 
         <div class="col-span-5">
           <div>
-            <img src="assets/images/white-curved-arrow-transparent-11-dr-katharina-johnson--comdlpng6944808.jpg" alt="">
+            <img src="assets/images/36.png" alt="">
           </div>
 
           <div class="mt-10">
-            <h4 class="font-bold text-[36px] text-black" data-aos="fade-up">Contact Information</h4>
-            <p class="mt-4 text-gray-600 font-medium" data-aos="fade-up">Plan upon yet way get cold spot its week.
+            <h4 class="font-bold text-[36px] text-white" data-aos="fade-up">Contact Information</h4>
+            <p class="mt-4 text-gray-300 font-medium" data-aos="fade-up">Plan upon yet way get cold spot its week.
               Almost do am or limits hearts. Resolve parties but why she shewing.</p>
           </div>
 
@@ -493,8 +477,8 @@
                 <span class="text-white font-bold text-[18px]"><i class="fas fa-phone-alt"></i></span>
               </div>
               <div class="text-left">
-                <h3 class="font-bold text-[18px] sm:text-[20px] text-black">Hotline</h3>
-                <p class="text-black font-medium text-[17px] sm:text-[16px]">+4733378901</p>
+                <h3 class="font-bold text-[18px] sm:text-[20px] text-gray-300">Contact</h3>
+                <p class="text-gray-300 font-medium text-[17px] sm:text-[16px]">03418312249</p>
               </div>
             </div>
 
@@ -504,8 +488,8 @@
                 <span class="text-white font-bold text-[18px]"><i class="fas fa-map-marker-alt"></i></span>
               </div>
               <div class="text-left">
-                <h3 class="font-bold text-[18px] sm:text-[20px] text-black">Location</h3>
-                <p class="text-gray-600 font-medium text-[15px] sm:text-[16px]">Our Location 55</p>
+                <h3 class="font-bold text-[18px] sm:text-[20px] text-gray-300">Location</h3>
+                <p class="text-gray-300 font-medium text-[15px] sm:text-[16px]">Our Location 55</p>
               </div>
             </div>
 
@@ -515,8 +499,8 @@
                 <span class="text-white font-bold text-[18px]"><i class="fas fa-envelope-open-text"></i></span>
               </div>
               <div class="text-left">
-                <h3 class="font-bold text-[18px] sm:text-[20px] text-black">Official Email</h3>
-                <p class="text-black text-[17px] font-medium sm:text-[16px]">info@agrul.com</p>
+                <h3 class="font-bold text-[18px] sm:text-[20px] text-gray-300">Email Address</h3>
+                <p class="text-gray-300 text-[17px] font-medium sm:text-[16px]">muhammadasfahan689@gmail.com</p>
               </div>
             </div>
           </div>
@@ -524,47 +508,50 @@
 
 
         <div class="col-span-7">
-          <div class="bg-white shadow-lg rounded">
+          <div class="bg-[#141414] shadow-lg rounded">
             <div class="lg:py-[60px] lg:px-[80px] p-6">
               <button class="mx-auto border border-[#cccccc] rounded bg-transparent items-center py-2 px-6">
                 <span
-                  class="text-[20px] font-bold bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-transparent text-center bg-clip-text">Have
+                  class="text-[20px] font-bold text-[#b91202]">Have
                   Questions?</span>
               </button>
 
               <div class="mt-5">
-                <h4 class="lg:text-[48px] text-[36px] font-bold">Send us a Message</h4>
+                <h4 class="lg:text-[48px] text-[36px] text-white font-bold">Send us a Message</h4>
               </div>
 
               <div class="mt-10">
                 <input type="text"
-                  class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 "
+                  class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 "
                   placeholder="Name">
 
                 <div class="grid lg:grid-cols-2 md:grid-col-2 grid-cols-1 mt-10 gap-7">
                   <input type="email" placeholder="Email"
-                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
                   <input type="text" placeholder="Subject"
-                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
                 </div>
 
                 <div class="mt-6">
                   <textarea placeholder="Tell Us About Project*"
-                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-500 placeholder:text-[18px] py-4 h-50 focus:outline-none focus:ring-0 "></textarea>
+                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 h-50 focus:outline-none focus:ring-0 "></textarea>
                 </div>
                 <div class="mt-3">
-                  <a href="#"
-                    class="group relative inline-block bg-[#1351d8] rounded-lg px-[30px] py-[18px] lg:w-[220px] w-[219px] font-medium text-[17px] text-white overflow-hidden">
-                    <!-- Hover Background -->
-                    <span
-                      class="absolute inset-0 bg-[#0e2364] scale-x-0 origin-center transition-transform duration-500 ease-in-out group-hover:scale-x-150 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]"></span>
+                   <button
+        class="relative overflow-hidden rounded-lg font-bold py-[14px] px-[35px] bg-[#b91202] text-white group">
 
-                    <!-- Content -->
-                    <span class="relative z-10 flex items-center gap-2">
+        <span
+          class="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-500 ease-in-out
+                 group-hover:scale-x-110 z-0
+                 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+        </span>
+<span class="relative z-10 flex items-center gap-2">
                       <i class="fa fa-paper-plane"></i>
                       Get In Touch
                     </span>
-                  </a>
+
+      </button>
+                 
 
                 </div>
               </div>
