@@ -13,95 +13,88 @@
 
 </head>
 
-<body style="background-color: rgb(0, 0, 0);">
+<body class="bg-black">
+  <header>
+    <nav
+      class="fixed w-full top-0 z-50 bg-black/10 backdrop-blur-lg re transition-colors duration-300 md:px-10 lg:px-10">
+      <div class="container mx-auto flex h-20 items-center justify-between px-4">
+        <a href="#"
+          class="flex items-center space-x-3 z-10 max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
+          <i class="fa-solid fa-code text-[#9c00ff]"></i>
+          <span class="text-white">Asfahan</span>
+        </a>
 
-  <!-- section 1  -->
-<header class="relative min-h-screen flex flex-col overflow-hidden">
+        <!-- Desktop Menu -->
+        <ul
+          class="hidden min-[886px]:flex space-x-8 text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <li><a href="#" class="hover:text-red-600">Home</a></li>
+          <li><a href="#" class="hover:text-red-600">Service</a></li>
+          <li><a href="#" class="hover:text-red-600">About</a></li>
+          <li><a href="#" class="hover:text-red-600">Expertise</a></li>
+          <li><a href="#" class="hover:text-red-600">Project</a></li>
+          <li><a href="#" class="hover:text-red-600">Blog</a></li>
+        </ul>
 
-  <!-- NAVBAR -->
-  <div class="bg-black relative z-20">
-    <nav class="max-w-[1320px] h-[92px] mx-auto flex items-center justify-between px-4 relative">
-
-      <!-- Mobile Toggle -->
-      <button class="hidden max-[885px]:block absolute left-4" id="mobile-menu-toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-
-      <!-- Logo -->
-      <a href="#"
-        class="flex items-center space-x-3 z-10 max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
-        <i class="fa-solid fa-code text-[#b91202]"></i>
-        <span class="text-white">Asfahan</span>
-      </a>
-
-      <!-- Desktop Menu -->
-      <ul
-        class="hidden min-[886px]:flex space-x-8 text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <li><a href="#" class="hover:text-red-600">Home</a></li>
-        <li><a href="#" class="hover:text-red-600">Service</a></li>
-        <li><a href="#" class="hover:text-red-600">About</a></li>
-        <li><a href="#" class="hover:text-red-600">Expertise</a></li>
-        <li><a href="#" class="hover:text-red-600">Project</a></li>
-        <li><a href="#" class="hover:text-red-600">Blog</a></li>
-      </ul>
-
-      <!-- Contact -->
-      <div class="hidden min-[886px]:flex items-center gap-3">
-        <i class="fa-solid fa-envelope text-red-600 text-2xl"></i>
-        <div>
-          <p class="text-gray-400 text-sm leading-none">Have any Questions?</p>
-          <a href="mailto:muhammadasfahan689@gmail.com"
-            class="text-white text-sm">muhammadasfahan689@gmail.com</a>
+        <!-- Contact -->
+        <div class="hidden min-[886px]:flex items-center gap-3">
+          <i class="fa-solid fa-envelope text-[#9c00ff] text-2xl"></i>
+          <div>
+            <p class="text-gray-400 text-sm leading-none">Have any Questions?</p>
+            <a href="mailto:muhammadasfahan689@gmail.com" class="text-white text-sm">muhammadasfahan689@gmail.com</a>
+          </div>
         </div>
+
       </div>
-
     </nav>
-  </div>
+  </header>
 
-  <!-- BACKGROUND IMAGE -->
-  <img
-    src="https://uploads-ssl.webflow.com/646f65e37fe0275cfb808405/646f66cdeeb4ddfdae25a26e_Background%20Hero.svg"
-    alt=""
-    class="absolute inset-0 -z-10 h-full w-full object-cover" />
+  <!--  Section 1 -->
+  <section class="relative w-full flex items-center justify-center min-h-screen overflow-hidden
+         bg-gradient-to-b from-[#121212] to-purple-900">
 
-  <!-- HERO CONTENT -->
-  <div class="flex-1 flex items-center">
-    <div class="mx-auto w-full max-w-7xl px-5 text-center">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/60 z-0"></div>
 
-      <h1 class="mb-6 text-4xl md:text-6xl font-bold text-white">
-        Say Hello I’m <span class="text-[#b91202]">Muhammad Asfahan</span><br />
-        Web Developer
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-4 text-center text-white">
+      <h1 class="mb-6 text-4xl  md:text-[65px] font-bold text-white">
+        Say Hello I’m Muhammad Asfahan
+        Website Developer
       </h1>
 
-      <p class="mx-auto mb-8 max-w-[520px] text-lg text-gray-400">
-        I’m a full-stack web developer building modern, fast and responsive web
-        applications.
+      <p class="mx-auto mb-8 max-w-[720px] text-lg text-gray-400">
+        I’m a full-stack web developer specializing in modern, fast, and responsive web applications.
+        I build scalable solutions with clean code and great user experience.
       </p>
 
-      <!-- BUTTON -->
+
+      <!-- CTA Button -->
       <button
-        class="relative overflow-hidden rounded-lg font-bold py-[14px] px-[35px] bg-[#b91202] text-white group">
+        class="relative overflow-hidden   shadow-[0_0_20px_rgba(156,0,255,0.8)] font-bold py-[14px] px-[35px] bg-white text-[#9c00ff] group rounded">
 
+        <!-- Hover Fill (Same clip-path as button) -->
         <span
-          class="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-500 ease-in-out
-                 group-hover:scale-x-110 z-0
-                 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+          class="absolute inset-0 bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-white scale-x-0 origin-center transition-transform duration-800 ease-in-out group-hover:scale-x-170 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
         </span>
 
-        <span class="relative z-10 transition-colors duration-300 group-hover:text-black">
-          Contact Me
-        </span>
-
+        <!-- Button Text -->
+        <span class="relative z-10 font-medium  group-hover:text-white">Contact me</span>
       </button>
-
     </div>
-  </div>
 
-</header>
+    <!-- Scroll Icon -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10">
+      <a href="#about">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </a>
+    </div>
+
+  </section>
+  <!-- section 1  -->
+
 
   <!-- section 2 start -->
   <div class="container mx-auto w-full max-w-[1322px]  p-4  lg:mt-20">
@@ -109,10 +102,11 @@
       <!-- Text Content -->
       <div class="lg:col-span-7  " data-aos="fade-in">
         <div class="mt-10 lg:mt-20">
-          <h3
-            class="uppercase  font-bold text-lg lg:text-start md:text-start text-center text-[#b91202]  ">
+          <h3 class="uppercase  font-bold text-lg lg:text-start md:text-start text-center text-[#9c00ff]  ">
             About us</h3>
-          <h1 class="text-3xl md:text-4xl text-white lg:text-5xl mt-4 font-medium lg:text-start md:text-start text-center">Full Stack Web Developer</h1>
+          <h1
+            class="text-3xl md:text-4xl text-white lg:text-5xl mt-4 font-medium lg:text-start md:text-start text-center">
+            Full Stack Web Developer</h1>
           <p class="mt-6 text-gray-300 text-base md:text-lg leading-relaxed">
             I am a full stack web developer specializing in building modern, responsive, and scalable web applications.
             I work across both frontend and backend to deliver complete, high-quality digital solutions.
@@ -122,43 +116,37 @@
           <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 mt-6">
             <!-- Repeat this block as needed -->
             <div class="flex items-center">
-              <span
-                class="bg-[#b91202] rounded-full w-7 h-7 flex items-center justify-center">
+              <span class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
                 <i class="fa-solid fa-check text-white text-sm"></i>
               </span>
               <span class="font-semibold ms-3 text-sm sm:text-base text-gray-300">Responsive</span>
             </div>
             <div class="flex items-center">
-              <span
-                class="bg-[#b91202] rounded-full w-7 h-7 flex items-center justify-center">
+              <span class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
                 <i class="fa-solid fa-check text-white text-sm"></i>
               </span>
               <span class="font-semibold ms-3 text-sm sm:text-base text-gray-300">API Integration </span>
             </div>
             <div class="flex items-center">
-              <span
-                class="bg-[#b91202] rounded-full w-7 h-7 flex items-center justify-center">
+              <span class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
                 <i class="fa-solid fa-check text-white text-sm"></i>
               </span>
               <span class="font-semibold ms-3 text-sm sm:text-base text-gray-300">Modern Framework</span>
             </div>
             <div class="flex items-center">
-              <span
-                class="bg-[#b91202] rounded-full w-7 h-7 flex items-center justify-center">
+              <span class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
                 <i class="fa-solid fa-check text-white text-sm"></i>
               </span>
               <span class="font-semibold ms-3 text-sm sm:text-base text-gray-300">Frontend & Backend</span>
             </div>
             <div class="flex items-center">
-              <span
-                class="bg-[#b91202] rounded-full w-7 h-7 flex items-center justify-center">
+              <span class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
                 <i class="fa-solid fa-check text-white text-sm"></i>
               </span>
               <span class="font-semibold ms-3 text-sm sm:text-base text-gray-300">Security & Optimization</span>
             </div>
             <div class="flex items-center">
-              <span
-                class="bg-[#b91202] rounded-full w-7 h-7 flex items-center justify-center">
+              <span class="bg-gradient-to-r from-[#1351d8] to-[#9c00ff] rounded-full w-7 h-7 flex items-center justify-center">
                 <i class="fa-solid fa-check text-white text-sm"></i>
               </span>
               <span class="font-semibold ms-3 text-sm sm:text-base text-gray-300 ">Maintainable Code</span>
@@ -172,7 +160,7 @@
         <div class="relative group w-full max-w-[500px]">
           <!-- Background shape -->
           <div
-            class="absolute left-0 top-0 -z-10 w-full h-full rotate-3 rounded-[20px] bg-[#b91202] transition-transform duration-300 group-hover:rotate-[2deg] md:rotate-[5deg]">
+            class="absolute left-0 top-0 -z-10 w-full h-full rotate-3 rounded-[20px] bg-gradient-to-r from-[#1351d8] to-[#9c00ff] transition-transform duration-300 group-hover:rotate-[2deg] md:rotate-[5deg]">
           </div>
 
           <!-- Image -->
@@ -190,12 +178,11 @@
 
   <!-- section 3  -->
 
-  <section >
+  <section>
     <div class="flex  justify-center  ">
 
       <div class="border-1 border-[#cccccc] rounded lg:mt-30 mt-20 bg-transparent">
-        <span
-          class="p-3 text-[20px] uppercase font-bold text-[#b91202] ">
+        <span class="p-3 text-[20px] uppercase font-bold text-[#b91202] ">
           What I Offer
         </span>
       </div>
@@ -229,8 +216,9 @@
               </h2>
             </div>
 
-            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 ">  I build fast, secure and scalable websites using modern technologies
-  tailored to your business needs.</p>
+            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 "> I build fast, secure and
+              scalable websites using modern technologies
+              tailored to your business needs.</p>
 
 
           </div>
@@ -248,8 +236,9 @@
               </h2>
             </div>
 
-            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 "> Creative and user-friendly website designs focused on UI/UX,
-  responsiveness and brand identity.</p>
+            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 "> Creative and user-friendly
+              website designs focused on UI/UX,
+              responsiveness and brand identity.</p>
 
 
           </div>
@@ -268,8 +257,9 @@
               </h2>
             </div>
 
-            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 "> High-performance mobile applications for Android and cross-platform
-  solutions with smooth user experience.</p>
+            <p class="mb-3 font-normal text-gray-300 text-[20px] dark:text-gray-400 mt-6 "> High-performance mobile
+              applications for Android and cross-platform
+              solutions with smooth user experience.</p>
 
 
           </div>
@@ -287,164 +277,265 @@
   </section>
   <!-- section 3 end  -->
 
-<!-- section 4 start -->
-<div class="container mx-auto w-full max-w-[1322px] p-4 mt-5 lg:mt-10">
-  <h1 class="text-3xl md:text-4xl lg:text-5xl text-center text-white  font-medium ">Tech Stack</h1>
-          <p class="mt-6 text-gray-300 text-base md:text-lg text-center leading-relaxed">
-            Technologies I work with to build modern web & mobile applications
-          </p>
+  <!-- section 4 start -->
+  <div class="container mx-auto w-full max-w-[1322px] p-4 mt-5 lg:mt-10">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl text-center text-white  font-medium ">Tech Stack</h1>
+    <p class="mt-6 text-gray-300 text-base md:text-lg text-center leading-relaxed">
+      Technologies I work with to build modern web & mobile applications
+    </p>
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-5">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-5">
 
-    <!-- Skill Card -->
- <div class="group bg-white/5  
+      <!-- Skill Card -->
+      <div class="group bg-white/5  
             border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#E34F26] hover:shadow-[0_10px_40px_rgba(227,79,38,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#E34F26] group-hover:scale-110">
-    <i class="fa-brands fa-html5"></i>
-  </span>
+          <i class="fa-brands fa-html5"></i>
+        </span>
 
-  <p class="font-semibold text-white">HTML</p>
-</div>
+        <p class="font-semibold text-white">HTML</p>
+      </div>
 
 
-    <!-- Skill Card -->
-  <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+      <!-- Skill Card -->
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#1572B6] hover:shadow-[0_10px_40px_rgba(21,114,182,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#1572B6] group-hover:scale-110">
-    <i class="fa-brands fa-css3-alt"></i>
-  </span>
+          <i class="fa-brands fa-css3-alt"></i>
+        </span>
 
-  <p class="font-semibold text-white">CSS</p>
-</div>
+        <p class="font-semibold text-white">CSS</p>
+      </div>
 
 
-    <!-- Skill Card -->
-   <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+      <!-- Skill Card -->
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#F7DF1E] hover:shadow-[0_10px_40px_rgba(247,223,30,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#F7DF1E] group-hover:scale-110">
-    <i class="fa-brands fa-js "></i>
-  </span>
+          <i class="fa-brands fa-js "></i>
+        </span>
 
-  <p class="font-semibold text-white  ">JavaScript</p>
-</div>
+        <p class="font-semibold text-white  ">JavaScript</p>
+      </div>
 
-    <!-- Skill Card -->
-<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+      <!-- Skill Card -->
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#61DAFB] hover:shadow-[0_10px_40px_rgba(97,218,251,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#61DAFB] group-hover:scale-110">
-    <i class="fa-brands fa-react"></i>
-  </span>
+          <i class="fa-brands fa-react"></i>
+        </span>
 
-  <p class="font-semibold text-white">React</p>
-</div>
+        <p class="font-semibold text-white">React</p>
+      </div>
 
 
 
-    <!-- Skill Card -->
-   <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+      <!-- Skill Card -->
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#47A248] hover:shadow-[0_10px_40px_rgba(71,162,72,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#47A248] group-hover:scale-110">
-    <i class="fa-solid fa-database"></i>
-  </span>
+          <i class="fa-solid fa-database"></i>
+        </span>
 
-  <p class="font-semibold text-white">MongoDB</p>
-</div>
-<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+        <p class="font-semibold text-white">MongoDB</p>
+      </div>
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#FF2D20] hover:shadow-[0_10px_40px_rgba(255,45,32,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#FF2D20] group-hover:scale-110">
-    <i class="fa-brands fa-laravel"></i>
-  </span>
+          <i class="fa-brands fa-laravel"></i>
+        </span>
 
-  <p class="font-semibold text-white">Laravel</p>
-</div>
+        <p class="font-semibold text-white">Laravel</p>
+      </div>
 
-<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#339933] hover:shadow-[0_10px_40px_rgba(51,153,51,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#339933] group-hover:scale-110">
-    <i class="fa-brands fa-node-js"></i>
-  </span>
+          <i class="fa-brands fa-node-js"></i>
+        </span>
 
-  <p class="font-semibold text-white">Node.js</p>
-</div>
+        <p class="font-semibold text-white">Node.js</p>
+      </div>
 
-<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#00758F] hover:shadow-[0_10px_40px_rgba(0,117,143,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#00758F] group-hover:scale-110">
-    <i class="fa-solid fa-database"></i>
-  </span>
+          <i class="fa-solid fa-database"></i>
+        </span>
 
-  <p class="font-semibold text-white">MySQL</p>
-</div>
+        <p class="font-semibold text-white">MySQL</p>
+      </div>
 
-<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#444444] hover:shadow-[0_10px_40px_rgba(68,68,68,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#444444] group-hover:scale-110">
-    <i class="fa-brands fa-node-js"></i>
-  </span>
+          <i class="fa-brands fa-node-js"></i>
+        </span>
 
-  <p class="font-semibold text-white">Express.js</p>
-</div>
-<div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
+        <p class="font-semibold text-white">Express.js</p>
+      </div>
+      <div class="group bg-white/5 border border-gray-300 rounded-2xl p-6
             flex flex-col items-center justify-center text-center
             transition-all duration-300 hover:-translate-y-2
             hover:border-[#02569B] hover:shadow-[0_10px_40px_rgba(2,86,155,0.45)]">
 
-  <span class="text-4xl mb-3 transition-transform duration-300
+        <span class="text-4xl mb-3 transition-transform duration-300
                text-[#02569B] group-hover:scale-110">
-    <i class="fa-brands fa-flutter"></i>
-  </span>
+          <i class="fa-brands fa-flutter"></i>
+        </span>
 
-  <p class="font-semibold text-white">Flutter</p>
-</div>
+        <p class="font-semibold text-white">Flutter</p>
+      </div>
 
 
+
+    </div>
 
   </div>
+  <!-- section 4 end -->
+<div class="container mx-auto px-4 mt-20">
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
 
-</div>
-<!-- section 4 end -->
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <a target="_self" class="group/portfolio relative z-1 block aspect-[640/916] overflow-hidden rounded-5 p-6 md:p-[1.875rem]" href="#">
+                                <span class="absolute inset-0 z-[2] bg-gradient-to-b from-red-500/20 to-[#b91202] [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)] md:group-hover/portfolio:[transform:perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]">
+                                </span>
+                                <img data-nimg="fill" class=" w-[350px] h-[525px] [transform:scale(1.05)] [transition:.9s_ease] group-hover/portfolio:[transform:scale(1)] object-cover" sizes="
+          (min-width:768px) 50vw, 
+          (min-width:1024px) 25vw,
+          100vw
+          " src="assets/images/about-5.webp" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                <div class="relative z-10 flex h-full flex-col">
+                                    <div class="mt-auto  md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
+                                        <h3 class="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
+                                            <span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)] text-[24px]">Cloud
+                                                Migrate Pro</span>
+                                        </h3>
+                                        <hr class="my-3">
+                                        <p class="mt-[13px] overflow-hidden pt-[11px] text-body"><span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">Lorem
+                                                Ipsum is simply dummy</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <a target="_self" class="group/portfolio relative z-1 block aspect-[640/916] overflow-hidden rounded-5 p-6 md:p-[1.875rem]" href="#">
+                                <span class="absolute inset-0 z-[2] bg-gradient-to-b from-red-500/20 to-[#b91202] [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)] md:group-hover/portfolio:[transform:perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]">
+                                </span>
+                                <img data-nimg="fill" class=" w-[350px] h-[525px] [transform:scale(1.05)] [transition:.9s_ease] group-hover/portfolio:[transform:scale(1)] object-cover" sizes="
+          (min-width:768px) 50vw, 
+          (min-width:1024px) 25vw,
+          100vw
+          " src="assets/images/about-5.webp" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                <div class="relative z-10 flex h-full flex-col">
+                                    <div class="mt-auto  md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
+                                        <h3 class="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
+                                            <span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)] text-[24px]">Cloud
+                                                Migrate Pro</span>
+                                        </h3>
+                                        <hr class="my-3">
+                                        <p class="mt-[13px] overflow-hidden pt-[11px] text-body"><span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">Lorem
+                                                Ipsum is simply dummy</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
 
- 
- 
-  
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <a target="_self" class="group/portfolio relative z-1 block aspect-[640/916] overflow-hidden rounded-5 p-6 md:p-[1.875rem]" href="#">
+                                <span class="absolute inset-0 z-[2] bg-gradient-to-b from-red-500/20 to-[#b91202] [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)] md:group-hover/portfolio:[transform:perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]">
+                                </span>
+                                <img data-nimg="fill" class=" w-[350px] h-[525px] [transform:scale(1.05)] [transition:.9s_ease] group-hover/portfolio:[transform:scale(1)] object-cover" sizes="
+          (min-width:768px) 50vw, 
+          (min-width:1024px) 25vw,
+          100vw
+          " src="assets/images/about-5.webp" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                <div class="relative z-10 flex h-full flex-col">
+                                    <div class="mt-auto  md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
+                                        <h3 class="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
+                                            <span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)] text-[24px]">Cloud
+                                                Migrate Pro</span>
+                                        </h3>
+                                        <hr class="my-3">
+                                        <p class="mt-[13px] overflow-hidden pt-[11px] text-body"><span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">Lorem
+                                                Ipsum is simply dummy</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div data-aos="fade-up" data-aos-delay="200">
+                            <a target="_self" class="group/portfolio relative z-1 block aspect-[640/916] overflow-hidden rounded-5 p-6 md:p-[1.875rem]" href="#">
+                                <span class="absolute inset-0 z-[2] bg-gradient-to-b from-red-500/20 to-[#b91202] [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)] md:group-hover/portfolio:[transform:perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]">
+                                </span>
+                                <img data-nimg="fill" class=" w-[350px] h-[525px] [transform:scale(1.05)] [transition:.9s_ease] group-hover/portfolio:[transform:scale(1)] object-cover" sizes="
+          (min-width:768px) 50vw, 
+          (min-width:1024px) 25vw,
+          100vw
+          " src="assets/images/about-5.webp" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                <div class="relative z-10 flex h-full flex-col">
+                                    <div class="mt-auto  md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
+                                        <h3 class="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
+                                            <span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)] text-[24px]">Cloud
+                                                Migrate Pro</span>
+                                        </h3>
+                                        <hr class="my-3">
+                                        <p class="mt-[13px] overflow-hidden pt-[11px] text-body"><span class="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">Lorem
+                                                Ipsum is simply dummy</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
 
 
 
@@ -461,7 +552,7 @@
 
         <div class="col-span-5">
           <div>
-            <img src="assets/images/36.png" alt="">
+            <img src="assets/images/21.png" class="w-100" alt="">
           </div>
 
           <div class="mt-10">
@@ -511,8 +602,7 @@
           <div class="bg-[#141414] shadow-lg rounded">
             <div class="lg:py-[60px] lg:px-[80px] p-6">
               <button class="mx-auto border border-[#cccccc] rounded bg-transparent items-center py-2 px-6">
-                <span
-                  class="text-[20px] font-bold text-[#b91202]">Have
+                <span class="text-[20px] font-bold text-[#b91202]">Have
                   Questions?</span>
               </button>
 
@@ -537,21 +627,20 @@
                     class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 h-50 focus:outline-none focus:ring-0 "></textarea>
                 </div>
                 <div class="mt-3">
-                   <button
-        class="relative overflow-hidden rounded-lg font-bold py-[14px] px-[35px] bg-[#b91202] text-white group">
+                  <button
+                    class="relative overflow-hidden rounded-lg font-bold py-[14px] px-[35px] bg-[#b91202] text-white group">
 
-        <span
-          class="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-500 ease-in-out
+                    <span class="absolute inset-0 bg-white scale-x-0 origin-center transition-transform duration-500 ease-in-out
                  group-hover:scale-x-110 z-0
                  [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
-        </span>
-<span class="relative z-10 flex items-center gap-2">
+                    </span>
+                    <span class="relative z-10 flex items-center gap-2">
                       <i class="fa fa-paper-plane"></i>
                       Get In Touch
                     </span>
 
-      </button>
-                 
+                  </button>
+
 
                 </div>
               </div>
@@ -564,9 +653,6 @@
   </section>
 
   <!-- section  9 -->
-
-  
-
 
 
   <!-- section 12 -->
