@@ -4,26 +4,17 @@
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
   }
 }
+/* Default: normal (desktop > 992px) */
 
-/* splide arrow  */
-/* @media (min-width: 1875px) {
-  
-.splide__arrow--prev {
-    left: -4em !important; 
-    height: 50px !important;
-    width: 50px !important;
-    background-color: white !important;
-    border: 1px solid rgb(148, 142, 142) !important;
+/* Sticky ONLY till 992px */
+@media (min-width: 1034px) {
+  .sticky-content {
+    position: sticky;
+    top: 96px; /* header height ke hisaab se adjust */
+    align-self: flex-start;
+  }
 }
-.splide__arrow--next {
-      height: 50px !important;
-    width: 50px !important;
-    right: -4em !important; 
-    background-color: white !important;
-    border: 1px solid rgb(148, 142, 142) !important;
 
-}
-} */
 
 /* card image design */
 .diagonal-clip-two {
