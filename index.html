@@ -102,16 +102,20 @@
 
 
       <!-- CTA Button -->
-      <button
+      <button 
+       onclick="location.href='#contact'"cursor="pointer"
         class="relative overflow-hidden   shadow-[0_0_20px_rgba(156,0,255,0.8)] font-bold py-[14px] px-[35px] bg-white text-[#9c00ff] group rounded">
-
+        <a href="#contact"></a>
         <!-- Hover Fill (Same clip-path as button) -->
         <span
-          class="absolute inset-0 bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-white scale-x-0 origin-center transition-transform duration-800 ease-in-out group-hover:scale-x-170 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+          class="absolute cursor-pointer inset-0 bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-white scale-x-0 origin-center transition-transform duration-800 ease-in-out group-hover:scale-x-170 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
         </span>
 
         <!-- Button Text -->
-        <span class="relative z-10 font-medium  group-hover:text-white">Contact me</span>
+         <a href="#contact">
+
+           <span class="relative z-10 font-medium  group-hover:text-white">Contact me</span>
+          </a>
       </button>
     </div>
 
@@ -780,7 +784,7 @@
 
 
   <!-- section  9 -->
-  <section class="relative py-20 md:mt-30 mt-0">
+  <section class="relative py-20 md:mt-30 mt-0" id="contact">
 
     <div class="absolute inset-0 bg-gradient-to-r from-[#1351d8] to-[#9c00ff] h-50 z-0"></div>
 
