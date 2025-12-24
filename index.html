@@ -9,7 +9,19 @@
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "deMeAzX4VkNVv1DgQ",
+      });
+    })();
+  </script>
 
 </head>
 
@@ -18,6 +30,12 @@
     <nav
       class="fixed w-full top-0 z-50 bg-black/10 backdrop-blur-lg re transition-colors duration-300 md:px-10 lg:px-10">
       <div class="container mx-auto flex h-20 items-center justify-between px-4">
+        <!-- Mobile Toggle Button -->
+<button id="menuBtn"
+  class="min-[886px]:hidden text-white text-3xl focus:outline-none">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
         <a href="#"
           class="flex items-center space-x-3 z-10 max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
           <i class="fa-solid fa-code text-[#9c00ff]"></i>
@@ -34,6 +52,21 @@
           <li><a href="#" class="hover:text-red-600">Project</a></li>
           <li><a href="#" class="hover:text-red-600">Blog</a></li>
         </ul>
+        <!-- Mobile Menu -->
+<div id="mobileMenu"
+  class="hidden fixed top-20 left-0 w-full bg-black/90 backdrop-blur-lg
+         min-[886px]:hidden text-white z-40">
+
+  <ul class="flex flex-col items-center space-y-6 py-8 text-lg">
+    <li><a href="#" class="hover:text-red-600">Home</a></li>
+    <li><a href="#" class="hover:text-red-600">Service</a></li>
+    <li><a href="#" class="hover:text-red-600">About</a></li>
+    <li><a href="#" class="hover:text-red-600">Expertise</a></li>
+    <li><a href="#" class="hover:text-red-600">Project</a></li>
+    <li><a href="#" class="hover:text-red-600">Blog</a></li>
+  </ul>
+</div>
+
 
         <!-- Contact -->
         <div class="hidden min-[886px]:flex items-center gap-3">
@@ -172,7 +205,7 @@
           <!-- Image -->
           <div class="relative">
             <img src="assets/images/WhatsApp Image 2025-12-11 at 12.44.44 PM.jpeg" alt="About"
-              class="w-full h-auto max-h-[500px] rounded-[20px] relative z-10 before:absolute before:-bottom-px before:-right-px before:left-0 before:z-[2] before:h-[65px] before:bg-white before:[clip-path:polygon(100%_0%,0%_100%,100%_100%)] dark:before:bg-accent-700 after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100 group-hover:transition-all group-hover:after:h-full group-hover:after:opacity-0 group-hover:after:duration-400 group-hover:after:ease-linear" />
+              class="w-full h-auto max-h-[500px] object-cover rounded-[20px] relative z-10 before:absolute before:-bottom-px before:-right-px before:left-0 before:z-[2] before:h-[65px] before:bg-white before:[clip-path:polygon(100%_0%,0%_100%,100%_100%)] dark:before:bg-accent-700 after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100 group-hover:transition-all group-hover:after:h-full group-hover:after:opacity-0 group-hover:after:duration-400 group-hover:after:ease-linear" />
           </div>
 
 
@@ -824,38 +857,73 @@
                 <h4 class="lg:text-[48px] text-[36px] text-white font-bold">Send us a Message</h4>
               </div>
 
-              <div class="mt-10">
-                <input type="text"
-                  class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 "
-                  placeholder="Name">
+              <form action="">
+                <div class="mt-10">
+                  <input type="text" id="full_name" class="w-full border-b-2  bg-transparent
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 " placeholder="Name"
+                    required>
 
-                <div class="grid lg:grid-cols-2 md:grid-col-2 grid-cols-1 mt-10 gap-7">
-                  <input type="email" placeholder="Email"
-                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
-                  <input type="text" placeholder="Subject"
-                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                  <div class="grid lg:grid-cols-2 md:grid-col-2 grid-cols-1 mt-10 gap-7">
+                    <input type="email" id="email" placeholder="Email" required class="w-full border-b-2  bg-transparent
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                    <input type="text" id="phone" placeholder="Phone" required class="w-full border-b-2  bg-transparent
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                  </div>
+
+                  <div class="mt-6">
+                    <textarea id="message" placeholder="Tell Us About Project*" required class="w-full border-b-2  bg-transparent
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 h-50 focus:outline-none focus:ring-0 "></textarea>
+                  </div>
+
+                  <div class="mt-4">
+                    <input type="button" value="Submit" onclick="sendbtn()" class="btn_submit flicker
+           shadow-[0_0_15px_rgba(156,43,255,0.5)]
+           font-bold py-[14px] px-[55px]
+           bg-gradient-to-r from-[#1351d8] to-[#9c00ff]
+           text-white rounded cursor-pointer">
+                  </div>
+                  <style>
+                    /* Spinner animation */
+                    @keyframes spin {
+                      0% {
+                        transform: rotate(0deg);
+                      }
+
+                      100% {
+                        transform: rotate(360deg);
+                      }
+                    }
+
+                    /* Loading state */
+                    .loading {
+                      pointer-events: none;
+                      opacity: 0.8;
+                      animation: flicker 1s infinite;
+                    }
+
+                    /* Flicker */
+                    @keyframes flicker {
+                      0% {
+                        opacity: 1;
+                      }
+
+                      50% {
+                        opacity: 0.6;
+                      }
+
+                      100% {
+                        opacity: 1;
+                      }
+                    }
+                  </style>
+
                 </div>
+              </form>
 
-                <div class="mt-6">
-                  <textarea placeholder="Tell Us About Project*"
-                    class="w-full border-b-2 border-gray-300 placeholder:text-gray-300 placeholder:text-[18px] py-4 h-50 focus:outline-none focus:ring-0 "></textarea>
-                </div>
-                <div class="mt-4">
-                  <button
-                    class="relative overflow-hidden   shadow-[0_0_15px_rgba(156,43,255,0.5)] font-bold py-[14px] px-[55px] bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-white group rounded">
-
-                    <!-- Hover Fill (Same clip-path as button) -->
-                    <span
-                      class="absolute inset-0 bg-white text-black scale-x-0 origin-center transition-transform duration-800 ease-in-out group-hover:scale-x-170 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
-                    </span>
-
-                    <!-- Button Text -->
-                    <span class="relative z-10 font-medium group-hover:text-[#9c00ff]">Submit</span>
-                  </button>
-
-
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -864,90 +932,72 @@
     </div>
   </section>
 
-  <!-- section  9 -->
-  <footer class="bg-dark b dark:bg-gray-900 border-t border-[#9c00ff] ">
-    <div class="mx-auto max-w-7xl space-y-8 px-4 py-5 sm:px-6 lg:space-y-16 lg:px-8">
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <div class="text-teal-600 dark:text-teal-300">
+ <footer class="bg-[#0b0b0b] border-t border-[#9c00ff]">
+  <div class="mx-auto max-w-7xl px-4 py-8">
+
+    <!-- Top Row -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-3 text-3xl font-bold">
+        <i class="fa-solid fa-code text-[#9c00ff]"></i>
+        <span class="text-white">Asfahan</span>
+      </a>
+
+      <!-- Social Icons -->
+      <ul class="flex gap-4">
+
+        <!-- Facebook -->
+        <li>
           <a href="#"
-            class="flex items-center space-x-3 z-10 max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
-            <i class="fa-solid fa-code text-[#9c00ff]"></i>
-            <span class="text-white">Asfahan</span>
+            class="group flex h-11 w-11 items-center justify-center rounded-full
+                   border border-white/10 bg-white/5
+                   transition-all duration-300
+                   hover:bg-[#1877F2] hover:scale-110 hover:shadow-lg hover:shadow-[#1877F2]/40">
+            <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
           </a>
-        </div>
+        </li>
 
-        <ul class="mt-8 flex justify-center gap-4">
-          <!-- Facebook -->
-          <li>
-            <a href="#" target="_blank" aria-label="Facebook" class="group flex h-11 w-11 items-center justify-center rounded-full
-             border border-white/10 bg-white/5
-             transition-all duration-300
-             hover:bg-[#1877F2] hover:scale-110 hover:shadow-lg hover:shadow-[#1877F2]/40">
-              <svg class="h-5 w-5 text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-              </svg>
-            </a>
-          </li>
+        <!-- LinkedIn -->
+        <li>
+          <a href="https://www.linkedin.com/in/muhammad-asfahan-3041172a2/"
+            target="_blank"
+            class="group flex h-11 w-11 items-center justify-center rounded-full
+                   border border-white/10 bg-white/5
+                   transition-all duration-300
+                   hover:bg-[#0A66C2] hover:scale-110 hover:shadow-lg">
+            <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zM7.09 20.452h-3.181v-11.36h3.181v11.36zM5.5 7.433c-1.018 0-1.843-.827-1.843-1.844 0-1.018.825-1.844 1.843-1.844s1.844.826 1.844 1.844c0 1.017-.826 1.844-1.844 1.844zM20.452 20.452h-3.181v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667h-3.181v-11.36h3.053v1.551h.043c.425-.806 1.464-1.656 3.012-1.656 3.22 0 3.817 2.12 3.817 4.873v6.592z"/>
+            </svg>
+          </a>
+        </li>
 
-          <!-- Instagram -->
-          <li>
-            <a href="https://www.linkedin.com/in/muhammad-asfahan-3041172a2/" target="_blank" aria-label="LinkedIn"
-              class="group flex h-11 w-11 items-center justify-center rounded-full
-           border border-white/10 bg-white/5
-           transition-all duration-300
-           hover:bg-gradient-to-tr hover:from-[#0A66C2] hover:to-[#004182]
-           hover:scale-110 hover:shadow-lg">
-              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 
-           2.761 2.239 5 5 5h14c2.761 
-           0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zM7.09 20.452h-3.181v-11.36h3.181v11.36zM5.5 7.433c-1.018 0-1.843-.827-1.843-1.844 
-           0-1.018.825-1.844 1.843-1.844s1.844.826 1.844 
-           1.844c0 1.017-.826 1.844-1.844 1.844zM20.452 
-           20.452h-3.181v-5.569c0-1.328-.027-3.037-1.852-3.037
-           -1.853 0-2.136 1.445-2.136 2.939v5.667h-3.181v-11.36h3.053v1.551h.043c.425-.806 1.464-1.656 
-           3.012-1.656 3.22 0 3.817 2.12 3.817 4.873v6.592z" />
-              </svg>
-            </a>
-          </li>
+        <!-- GitHub -->
+        <li>
+          <a href="https://github.com/asfahan09" target="_blank"
+            class="group flex h-11 w-11 items-center justify-center rounded-full
+                   border border-white/10 bg-white/5
+                   transition-all duration-300
+                   hover:bg-white hover:scale-110 hover:shadow-lg">
+            <svg class="h-5 w-5 text-white group-hover:text-black" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </a>
+        </li>
 
-
-          <!-- Twitter -->
-          <li>
-            <a href="https://github.com/asfahan09" target="_blank" aria-label="Twitter" class="group flex h-11 w-11 items-center justify-center rounded-full
-             border border-white/10 bg-white/5
-             transition-all duration-300
-             hover:bg-[#1DA1F2] hover:scale-110 hover:shadow-lg hover:shadow-[#1DA1F2]/40">
-              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743A11.65 11.65 0 013.149 4.897a4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-              </svg>
-            </a>
-          </li>
-
-          <!-- GitHub -->
-          <li>
-            <a href="#" target="_blank" aria-label="GitHub" class="group flex h-11 w-11 items-center justify-center rounded-full
-             border border-white/10 bg-white/5
-             transition-all duration-300
-             hover:bg-white hover:scale-110 hover:shadow-lg">
-              <svg class="h-5 w-5 text-white group-hover:text-black" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-
-
-      <p class="text-xs text-center text-gray-500 dark:text-gray-400">
-        © 2022. Company Name. All rights reserved.
-      </p>
+      </ul>
     </div>
-  </footer>
+
+    <!-- Bottom -->
+    <p class="mt-6 text-center text-xs text-gray-400">
+      © 2025 Muhammad Asfahan. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
 
 
 
@@ -958,47 +1008,27 @@
 
 
   </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const icon = menuBtn.querySelector("i");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+
+      // icon change bars <-> close
+      icon.classList.toggle("fa-bars");
+      icon.classList.toggle("fa-xmark");
+    });
+  });
+</script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script>4
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleButton = document.getElementById('mobile-menu-toggle');
-      const closeButton = document.getElementById('mobile-menu-close');
-      const mobileMenu = document.getElementById('mobile-menu');
 
-      // Toggle open
-      toggleButton.addEventListener('click', (e) => {
-        e.stopPropagation();
-        mobileMenu.classList.toggle('-translate-x-full');
-      });
-
-      // Close via close icon
-      closeButton.addEventListener('click', () => {
-        mobileMenu.classList.add('-translate-x-full');
-      });
-
-      // Close when clicking outside
-      document.addEventListener('click', function (event) {
-        const isClickInsideMenu = mobileMenu.contains(event.target);
-        const isClickOnToggle = toggleButton.contains(event.target);
-
-        if (!isClickInsideMenu && !isClickOnToggle) {
-          mobileMenu.classList.add('-translate-x-full');
-        }
-      });
-
-      // Close on link click inside menu
-      document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('-translate-x-full');
-        });
-      });
-    });
-
-
-  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
