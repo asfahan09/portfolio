@@ -4,6 +4,9 @@
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 /* Default: normal (desktop > 992px) */
 
 /* Sticky ONLY till 992px */
