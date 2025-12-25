@@ -90,7 +90,7 @@
 
     <!-- Content -->
     <div class="relative z-10 container mx-auto px-4 text-center text-white">
-      <h1 class="mb-6 text-[35px]  md:text-[65px] font-bold text-white">
+      <h1 class="mb-6 text-[35px]  md:text-[65px] font-medium text-white">
         Say Hello I’m Muhammad Asfahan
         Website Developer
       </h1>
@@ -102,6 +102,10 @@
 
 
       <!-- CTA Button -->
+       <div class="flex justify-center gap-5 flex flex-wrap
+">
+
+      
       <button 
        onclick="location.href='#contact'"cursor="pointer"
         class="relative overflow-hidden   shadow-[0_0_20px_rgba(156,0,255,0.8)] font-bold py-[14px] px-[35px] bg-white text-[#9c00ff] group rounded">
@@ -117,6 +121,30 @@
            <span class="relative z-10 font-medium  group-hover:text-white">Contact me</span>
           </a>
       </button>
+       <!-- CTA Button -->
+     <button
+  onclick="window.location.href='asfahancv.pdf'" target="_blank"
+  class="relative overflow-hidden shadow-[0_0_20px_rgba(156,0,255,0.8)]
+         font-bold py-[14px] px-[35px]
+         bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-white
+         group rounded cursor-pointer">
+
+  <!-- Hover Fill -->
+  <span
+    class="absolute inset-0 bg-white
+           scale-x-0 origin-center transition-transform duration-800 ease-in-out
+           group-hover:scale-x-170 z-0
+           [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+  </span>
+
+  <!-- Button Text -->
+  <span class="relative z-10 font-medium group-hover:text-[#9c00ff]">
+    Download CV
+  </span>
+
+</button>
+
+       </div>
     </div>
 
     <!-- Scroll Icon -->
@@ -194,6 +222,7 @@
               </span>
               <span class="font-semibold ms-3 text-sm sm:text-base text-gray-300 ">Maintainable Code</span>
             </div>
+            
           </div>
         </div>
       </div>
