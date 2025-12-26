@@ -26,15 +26,21 @@
 </head>
 
 <body class="bg-black">
+<!-- ================= SECTION 1 START ================= -->
+<section class="relative w-full flex items-center justify-center min-h-screen overflow-hidden
+         bg-gradient-to-b from-[#121212] to-purple-900">
+
+  <!-- ================= HEADER INSIDE SECTION ================= -->
   <header>
     <nav
       class="fixed w-full top-0 z-50 bg-black/10 backdrop-blur-lg re transition-colors duration-300 md:px-10 lg:px-10">
       <div class="container mx-auto flex h-20 items-center justify-between px-4">
+
         <!-- Mobile Toggle Button -->
-<button id="menuBtn"
-  class="min-[886px]:hidden text-white text-3xl focus:outline-none">
-  <i class="fa-solid fa-bars"></i>
-</button>
+        <button id="menuBtn"
+          class="min-[886px]:hidden text-white text-3xl focus:outline-none">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
         <a href="#"
           class="flex items-center space-x-3 z-10 max-[885px]:absolute max-[885px]:left-1/2 max-[885px]:-translate-x-1/2 text-3xl">
@@ -44,8 +50,8 @@
 
         <!-- Desktop Menu -->
         <ul
-  class="flex max-[1000px]:hidden space-x-8 text-white absolute
-         left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          class="flex max-[1000px]:hidden space-x-8 text-white absolute
+                 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
 
           <li><a href="#" class="hover:text-gray-400">Home</a></li>
           <li><a href="#service" class="hover:text-gray-400">Service</a></li>
@@ -54,112 +60,106 @@
           <li><a href="#project" class="hover:text-gray-400">Project</a></li>
           <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
         </ul>
+
         <!-- Mobile Menu -->
-<div id="mobileMenu"
-  class="hidden fixed top-20 left-0 w-full bg-black/90 backdrop-blur-lg
-         min-[886px]:hidden text-white z-40">
+        <div id="mobileMenu"
+          class="hidden fixed top-20 left-0 w-full bg-black/90 backdrop-blur-lg
+                 min-[886px]:hidden text-white z-40">
 
-  <ul class="flex flex-col items-center space-y-6 py-8 text-lg">
-    <li><a href="#" class="hover:text-red-600">Home</a></li>
-    <li><a href="#" class="hover:text-red-600">Service</a></li>
-    <li><a href="#" class="hover:text-red-600">About</a></li>
-    <li><a href="#" class="hover:text-red-600">Expertise</a></li>
-    <li><a href="#" class="hover:text-red-600">Project</a></li>
-    <li><a href="#" class="hover:text-red-600">Blog</a></li>
-  </ul>
-</div>
-
+          <ul class="flex flex-col items-center space-y-6 py-8 text-lg">
+            <li><a href="#" class="hover:text-red-600">Home</a></li>
+            <li><a href="#" class="hover:text-red-600">Service</a></li>
+            <li><a href="#" class="hover:text-red-600">About</a></li>
+            <li><a href="#" class="hover:text-red-600">Expertise</a></li>
+            <li><a href="#" class="hover:text-red-600">Project</a></li>
+            <li><a href="#" class="hover:text-red-600">Blog</a></li>
+          </ul>
+        </div>
 
         <!-- Contact -->
         <div class="hidden min-[886px]:flex items-center gap-3">
           <i class="fa-solid fa-envelope text-[#9c00ff] text-2xl"></i>
           <div>
             <p class="text-gray-400 text-sm leading-none">Have any Questions?</p>
-            <a href="mailto:muhammadasfahan689@gmail.com" class="text-white text-sm">muhammadasfahan689@gmail.com</a>
+            <a href="mailto:muhammadasfahan689@gmail.com" class="text-white text-sm">
+              muhammadasfahan689@gmail.com
+            </a>
           </div>
         </div>
 
       </div>
     </nav>
   </header>
+  <!-- ================= HEADER END ================= -->
 
-  <!--  Section 1 -->
-  <section class="relative w-full flex items-center justify-center min-h-screen overflow-hidden
-         bg-gradient-to-b from-[#121212] to-purple-900">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60 z-0"></div>
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/60 z-0"></div>
+  <!-- Content -->
+  <div class="relative z-10 container mx-auto px-4 text-center text-white" data-aos="zoom-in">
+    <h1 class="mb-6 text-[35px] md:text-[65px] font-medium text-white">
+      Say Hi, I’m Muhammad Asfahan Full Stack Web Developer
+    </h1>
 
-    <!-- Content -->
-    <div class="relative z-10 container mx-auto px-4 text-center text-white"data-aos="zoom-in" >
-      <h1 class="mb-6 text-[35px]   md:text-[65px] font-medium text-white"  >
-       Say Hi, I’m Muhammad Asfahan Full Stack Web Developer
-      </h1>
+    <p class="mx-auto mb-8 max-w-[720px] text-lg text-gray-400">
+      I’m a full-stack web developer specializing in modern, fast, and responsive web applications.
+      I build scalable solutions with clean code and great user experience.
+    </p>
 
-      <p class="mx-auto mb-8 max-w-[720px] text-lg text-gray-400">
-        I’m a full-stack web developer specializing in modern, fast, and responsive web applications.
-        I build scalable solutions with clean code and great user experience.
-      </p>
+    <!-- CTA Buttons -->
+    <div class="flex justify-center gap-5 flex-wrap">
 
+      <button onclick="location.href='#contact'"
+        class="relative overflow-hidden shadow-[0_0_20px_rgba(156,0,255,0.8)]
+               font-bold py-[14px] md:px-[35px] px-[9px]
+               bg-white text-[#9c00ff] group rounded">
 
-      <!-- CTA Button -->
-       <div class="flex justify-center gap-5 flex flex-wrap
-">
-
-      
-      <button 
-       onclick="location.href='#contact'"cursor="pointer"
-        class="relative overflow-hidden   shadow-[0_0_20px_rgba(156,0,255,0.8)] font-bold py-[14px] md:px-[35px] px-[9px] bg-white text-[#9c00ff] group rounded">
-        <a href="#contact"></a>
-        <!-- Hover Fill (Same clip-path as button) -->
         <span
-          class="absolute cursor-pointer inset-0 bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-white scale-x-0 origin-center transition-transform duration-800 ease-in-out group-hover:scale-x-170 z-0 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+          class="absolute inset-0 bg-gradient-to-r from-[#1351d8] to-[#9c00ff]
+                 scale-x-0 origin-center transition-transform duration-800
+                 ease-in-out group-hover:scale-x-170 z-0
+                 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
         </span>
 
-        <!-- Button Text -->
-         <a href="#contact">
-
-           <span class="relative z-10 font-medium  group-hover:text-white">Contact me</span>
-          </a>
+        <span class="relative z-10 font-medium group-hover:text-white">
+          Contact me
+        </span>
       </button>
-       <!-- CTA Button -->
-     <button
-  onclick="window.location.href='asfahancv.pdf'" target="_blank"
-  class="relative overflow-hidden shadow-[0_0_20px_rgba(156,0,255,0.8)]
-         font-bold py-[14px] px-[9px] md:px-[35px]
-         bg-gradient-to-r from-[#1351d8] to-[#9c00ff] text-white
-         group rounded cursor-pointer">
 
-  <!-- Hover Fill -->
-  <span
-    class="absolute inset-0 bg-white
-           scale-x-0 origin-center transition-transform duration-800 ease-in-out
-           group-hover:scale-x-170 z-0
-           [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
-  </span>
+      <button onclick="window.location.href='asfahancv.pdf'" target="_blank"
+        class="relative overflow-hidden shadow-[0_0_20px_rgba(156,0,255,0.8)]
+               font-bold py-[14px] px-[9px] md:px-[35px]
+               bg-gradient-to-r from-[#1351d8] to-[#9c00ff]
+               text-white group rounded cursor-pointer">
 
-  <!-- Button Text -->
-  <span class="relative z-10 font-medium group-hover:text-[#9c00ff]">
-    Visit Resume
-  </span>
+        <span
+          class="absolute inset-0 bg-white scale-x-0 origin-center
+                 transition-transform duration-800 ease-in-out
+                 group-hover:scale-x-170 z-0
+                 [clip-path:polygon(10%_0,100%_0,90%_100%,0_100%)]">
+        </span>
 
-</button>
+        <span class="relative z-10 font-medium group-hover:text-[#9c00ff]">
+          Visit Resume
+        </span>
+      </button>
 
-       </div>
     </div>
+  </div>
 
-    <!-- Scroll Icon -->
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10">
-      <a href="#about">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" stroke="currentColor"
-          viewBox="0 0 24 24" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </a>
-    </div>
+  <!-- Scroll Icon -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10">
+    <a href="#about">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white"
+        fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </a>
+  </div>
 
-  </section>
-  <!-- section 1  -->
+</section>
+<!-- ================= SECTION 1 END ================= -->
+
 
 
   <!-- section 2 start -->
